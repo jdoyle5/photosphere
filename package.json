@@ -1,5 +1,5 @@
 {
-  "name": "flickr",
+  "name": "photosphere",
   "private": true,
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -30,13 +30,13 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdoyle5/snickr.git"
+    "url": "git+https://github.com/jdoyle5/photosphere.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jdoyle5/snickr/issues"
+    "url": "https://github.com/jdoyle5/photosphere/issues"
   },
-  "homepage": "https://github.com/jdoyle5/snickr#readme"
+  "homepage": "https://github.com/jdoyle5/photosphere#readme"
 }
