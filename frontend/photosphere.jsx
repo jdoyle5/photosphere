@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import configStore from './store/store';
-import { createNewUser } from './actions/session';
+import { createNewUser, login } from './actions/session';
+import Root from './components/root';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const root = document.getElementById('root');
+
   const store = configStore();
-  window.store = store;
+  // TESTING STUFF
+  window.getState = store.getState;
   window.dispatch = store.dispatch;
   window.createNewUser = createNewUser;
-   ReactDOM.render(<h1>photosphere</h1>, root);
+  window.login = login;
+  ////////////////
+  const root = document.getElementById('root');
+  ReactDOM.render(<Root store={ store }/>, root);
 });
