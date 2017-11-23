@@ -31,7 +31,7 @@ export const receiveErrors = errors => ({
 // promise with a user object. Then we want to dispatch our action
 // creator by invokingthe dispatch on the receiveCurrentUser
 // This is for signing in...
-export const createNewUser = formUser => dispatch => (
+export const signup = formUser => dispatch => (
   postUser(formUser).then(user => dispatch(receiveCurrentUser(user)),
     err => (dispatch(receiveErrors(err.responseJSON))
   ))

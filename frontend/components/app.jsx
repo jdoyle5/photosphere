@@ -10,17 +10,18 @@ import {
 
 import GreetingContainer from './greeting/greeting_container';
 import sessionFormContainer from './session/session_form_container';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 
 const App = () => (
-  <div>
+  <div className="back-img">
     <header>
       <h1>Photosphere App</h1>
       <GreetingContainer />
     </header>
 
-    <Route path="/login" component={ sessionFormContainer }/>
-    <Route path="/signup" component={ sessionFormContainer }/>
+    <AuthRoute path="/login" component={ sessionFormContainer }/>
+    <AuthRoute path="/signup" component={ sessionFormContainer }/>
   </div>
 );
 

@@ -6,18 +6,19 @@ class SessionForm extends React.Component {
     super(props);      // of all of the fields of our form
     this.state = {
       username: '',
-      password: ''
+      password: '',
+      formChosen: props.formChosen
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   // We want to push to the home page if a user tries to go to the login
   // page after they are logged in.
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.loggedIn) {
-      this.props.history.push('/');
-    }
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   if (nextProps.loggedIn) {
+  //     this.props.history.push('/');
+  //   }
+  // }
 
   handleInput(type) {
     return (event) => {
@@ -27,8 +28,16 @@ class SessionForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const formUser = this.state;
-    this.props.processForm(formUser);
+    const formUser = {
+      username: this.state.username,
+      password: this.state.password
+    };
+
+    if(this.state.formChosen === "login") {
+      this.props.login(formUser);
+    } else {
+      this.props.signup(formUser);
+    }
   }
 
   altLink() {
