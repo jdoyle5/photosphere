@@ -1,7 +1,7 @@
 import React from 'react';
 import { AuthRoute } from '../../util/route_util';
 import Modal from 'react-modal';
-import { Image } from 'cloudinary-react';
+// import { Image } from 'cloudinary-react';
 import SessionFormContainer from '../session/session_form_container';
 
 class Splash extends React.Component {
