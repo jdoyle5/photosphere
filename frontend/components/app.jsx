@@ -10,18 +10,19 @@ import {
 
 import GreetingContainer from './greeting/greeting_container';
 import sessionFormContainer from './session/session_form_container';
+import SplashContainer from './splash/splash_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import Home from './home/home';
 
 
 const App = () => (
-  <div className="back-img">
+  <div>
     <header>
       <h1>Photosphere App</h1>
-      <GreetingContainer />
     </header>
 
-    <AuthRoute path="/login" component={ sessionFormContainer }/>
-    <AuthRoute path="/signup" component={ sessionFormContainer }/>
+    <AuthRoute exact path="/" component={SplashContainer} />
+    <ProtectedRoute path="/home" component={Home} />
   </div>
 );
 

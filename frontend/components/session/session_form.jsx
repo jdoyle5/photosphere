@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import Modal from 'react-modal';
 
 class SessionForm extends React.Component {
   constructor(props) { // We want to create a local state to keep track
@@ -10,15 +10,8 @@ class SessionForm extends React.Component {
       formChosen: props.formChosen
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.navLink = this.navLink.bind(this);
   }
-
-  // We want to push to the home page if a user tries to go to the login
-  // page after they are logged in.
-  // componentWillReceiveProps(nextProps) {
-  //   if (nextProps.loggedIn) {
-  //     this.props.history.push('/');
-  //   }
-  // }
 
   handleInput(type) {
     return (event) => {
@@ -32,19 +25,10 @@ class SessionForm extends React.Component {
       username: this.state.username,
       password: this.state.password
     };
-
     if(this.state.formChosen === "login") {
       this.props.login(formUser);
     } else {
       this.props.signup(formUser);
-    }
-  }
-
-  altLink() {
-    if (this.props.formChosen === 'login') {
-      return <Link to='/signup'>go to sign up</Link>;
-    } else {
-      return <Link to='/login'>go to login</Link>;
     }
   }
 
@@ -58,16 +42,24 @@ class SessionForm extends React.Component {
     );
   }
 
+  navLink() {
+    if (this.state.formChosen === "login") {
+      return (
+        <a onClick={() => this.setState({ formChosen: "signup" })}>Sign Up</a>
+      );
+    } else {
+      return (
+        <a onClick={() => this.setState({ formChosen: "login" })}>Log In</a>
+      );
+    }
+  }
+
   render() {
     return (
       <div className="login-form-container">
+        <h2>{this.state.formChosen}</h2>
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          You've made it to Photosphere...
-          <br/>
-        Feel free to {this.props.formChosen} or {this.altLink()}
           {this.renderErrors()}
-          <div className="login-form">
-            <br/>
             <label>Username:
               <input type="text"
                 value={this.state.username}
@@ -85,15 +77,15 @@ class SessionForm extends React.Component {
             </label>
             <br/>
             <input type="submit" value="Submit" />
-          </div>
         </form>
+        {this.navLink()}
       </div>
     );
   }
 
 }
 
-export default withRouter(SessionForm);
+export default SessionForm;
 
 
 

@@ -4,39 +4,37 @@ import Modal from 'react-modal';
 import { Image } from 'cloudinary-react';
 import SessionFormContainer from '../session/session_form_container';
 
-class Splash extends React.component {
+class Splash extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       modalOn: false,
       formChosen: ""
     };
+    this.modalClose = this.modalClose.bind(this);
+    this.modalOpen = this.modalOpen.bind(this);
   }
 
   // I found how to use the React Modal features from the following url:
   // http://elemental-ui.com/modal
   ////////////////////////////////////
   modalOpen(formChosen) {
-    return () => {
-      this.setState({
-        modalOn: true,
-        formChosen
-      });
-    };
+    this.setState({
+      modalOn: true,
+      formChosen
+    });
   }
 
   modalClose() {
-    return () => {
-      this.setState({
-        modalOn: false,
-        formChosen: ""
-      });
-    };
+    this.setState({
+      modalOn: false,
+      formChosen: ""
+    });
   }
 
   render () {
     return (
-      <div>
+      <div className="back-img">
         <nav>
           <div>
             Photosphere
@@ -50,11 +48,13 @@ class Splash extends React.component {
 
         <Modal
           isOpen={ this.state.modalOn }
-          onCancel={ this.modalClose }
+          onRequestClose={ this.modalClose }
           backDropClosesModal={ true }
+          className={"modal"}
+          overlayClassName={"modal-overlay"}
         >
           <SessionFormContainer
-            formChosen={ this.state.formType }
+            formChosen={ this.state.formChosen }
           />
         </Modal>
 
@@ -68,7 +68,7 @@ class Splash extends React.component {
 
 }
 
-
+export default Splash;
 
 
 
