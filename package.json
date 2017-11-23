@@ -17,7 +17,8 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "redux-logger": "^3.0.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -35,9 +36,7 @@
     "lib": "lib",
     "test": "test"
   },
-  "devDependencies": {
-    "redux-logger": "^3.0.6"
-  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jdoyle5/photosphere.git"
