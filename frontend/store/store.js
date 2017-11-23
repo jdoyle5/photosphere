@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import { composeWithDevTools } from 'redux-devtools-extension';
+// import { composeWithDevTools } from 'redux-devtools-extension';
 
 import rootReducer from '../reducers/root';
 
@@ -13,5 +13,5 @@ if (process.env.NODE_ENV !== 'production') {
 
 export default (preloadedState = {}) => createStore(
   rootReducer, preloadedState,
-  composeWithDevTools(applyMiddleware(...middlewares))
+  applyMiddleware(...middlewares)
 );
