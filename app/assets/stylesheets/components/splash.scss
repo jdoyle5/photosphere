@@ -1,0 +1,108 @@
+html {
+ background: url("http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511416555/Photo_Nov_21_8_57_54_PM_uxohsf.jpg") no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ height: 100vh;
+ width: 100%;
+ margin: 0 auto;
+ }
+
+:focus {
+ outline: none;
+}
+
+.modal {
+  position: absolute;
+  width: 300px;
+  height: 367px;
+  top: 50%;
+  left: 50%;
+  border-radius: 7px;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background: white;
+  opacity: 0.95;
+}
+
+.modal-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: rgba(0.3, 0.3, 0.3, 0.3);
+}
+
+.splash-top {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 40px;
+ padding: 10px 15px;
+}
+
+.splash-photosphere {
+   opacity: .5;
+   color: white;
+   // letter-spacing: 1px;
+   margin-right: 10px;
+   font-size: 14px;
+   text-transform: uppercase;
+   padding: 1px 12px;
+   font-family: 'Raleway Dots';
+}
+
+.splash-top-right {
+ float: right;
+ display: flex;
+ justify-content: space-around;
+
+ a {
+   opacity: .5;
+   color: white;
+   letter-spacing: 1px;
+   margin-right: 10px;
+   font-size: 14px;
+   text-transform: uppercase;
+   padding: 1px 8px;
+   font-family: 'Raleway Dots';
+ }
+
+ a:hover {
+   color: #a3a4a3;
+   cursor: default;
+ }
+}
+
+.guest-div {
+  text-align: center;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: .7;
+
+
+  h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: 'Raleway Dots'
+  }
+
+  button {
+    background-color: white;
+    opacity: .8;
+    color: gray;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    color: #a3a4a3;
+  }
+}

@@ -17,8 +17,8 @@ import HomeContainer from './home/home_container';
 
 const App = () => (
   <div>
-  <AuthRoute exact path="/" component={SplashContainer} />
-  <ProtectedRoute path="/home" component={HomeContainer} />
+    <AuthRoute exact path="/" component={SplashContainer} />
+    <ProtectedRoute path="/home" component={HomeContainer} />
   </div>
 );
 
