@@ -154,12 +154,14 @@
     margin-top: 18px;
     padding: 10px 30px 10px 30px;
     font-size: 12px;
+    text-align: center;
   }
+
   input::-webkit-input-placeholder {
     color: #B9B9B9;
     text-align: center;
-    cursor-align: center;
   }
+
   input[type="submit"] {
     background-color: gray;
     color: white;
