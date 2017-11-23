@@ -36,7 +36,6 @@
     "lib": "lib",
     "test": "test"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jdoyle5/photosphere.git"
