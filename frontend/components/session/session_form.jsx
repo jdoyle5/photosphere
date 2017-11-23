@@ -25,7 +25,7 @@ class SessionForm extends React.Component {
       username: this.state.username,
       password: this.state.password
     };
-    if(this.state.formChosen === "login") {
+    if(this.state.formChosen === "Log In") {
       this.props.login(formUser);
     } else {
       this.props.signup(formUser);
@@ -43,38 +43,36 @@ class SessionForm extends React.Component {
   }
 
   navLink() {
-    if (this.state.formChosen === "login") {
+    if (this.state.formChosen === "Log In") {
       return (
-        <a onClick={() => this.setState({ formChosen: "signup" })}>Sign Up</a>
+        <a onClick={() => this.setState({ formChosen: "Sign Up" })}>Sign Up</a>
       );
     } else {
       return (
-        <a onClick={() => this.setState({ formChosen: "login" })}>Log In</a>
+        <a onClick={() => this.setState({ formChosen: "Log In" })}>Log In</a>
       );
     }
   }
 
   render() {
     return (
-      <div className="login-form-container">
+      <div className="session-form-container">
         <h2>{this.state.formChosen}</h2>
-        <form onSubmit={this.handleSubmit} className="login-form-box">
+      <form onSubmit={this.handleSubmit} className="form">
           {this.renderErrors()}
-            <label>Username:
               <input type="text"
                 value={this.state.username}
                 onChange={this.handleInput('username')}
                 className="login-input"
+                placeholder="username"
               />
-            </label>
             <br/>
-            <label>Password:
               <input type="password"
                 value={this.state.password}
                 onChange={this.handleInput('password')}
                 className="login-input"
+                placeholder="password"
               />
-            </label>
             <br/>
             <input type="submit" value="Submit" />
         </form>

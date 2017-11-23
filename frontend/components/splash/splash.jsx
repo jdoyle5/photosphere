@@ -34,15 +34,15 @@ class Splash extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="splash-all">
         <nav className="splash-top">
           <div className="splash-photosphere">
             Photosphere
           </div>
 
           <div className="splash-top-right">
-            <a onClick={() => this.modalOpen("login")}>Log In</a>
-            <a onClick={() => this.modalOpen("signup")}>Sign Up</a>
+            <a onClick={() => this.modalOpen("Log In")}>Log In</a>
+          <a onClick={() => this.modalOpen("Sign Up")}>Sign Up</a>
           </div>
         </nav>
 
@@ -58,7 +58,7 @@ class Splash extends React.Component {
           />
         </Modal>
 
-        <div className="demo-div">
+        <div className="guest-div">
           <h1>There is no such thing as an ugly photo </h1>
         <button>Guest</button>
         </div>
