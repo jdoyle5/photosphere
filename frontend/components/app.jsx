@@ -8,7 +8,7 @@ import {
   HashRouter
 } from 'react-router-dom';
 
-import GreetingContainer from './greeting/greeting_container';
+import NavBarContainer from './nav_bar/nav_bar_container';
 import sessionFormContainer from './session/session_form_container';
 import SplashContainer from './splash/splash_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
@@ -16,9 +16,15 @@ import HomeContainer from './home/home_container';
 
 
 const App = () => (
-  <div>
-    <AuthRoute exact path="/" component={SplashContainer} />
-    <ProtectedRoute path="/home" component={HomeContainer} />
+  <div className="everything">
+    <nav className="navbar">
+      <ProtectedRoute path="/" component={NavBarContainer}/>
+    </nav>
+
+    <div>
+      <AuthRoute exact path="/" component={SplashContainer} />
+      <ProtectedRoute path="/home" component={HomeContainer} />
+    </div>
   </div>
 );
 

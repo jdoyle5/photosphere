@@ -1,0 +1,40 @@
+.nav-top {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 40px;
+ padding: 10px 15px;
+ border: black;
+ background-color: gray;
+}
+
+.nav-photosphere {
+   opacity: 0.4;
+   color: white;
+   letter-spacing: 1px;
+   margin-right: 10px;
+   font-size: 14px;
+   text-transform: uppercase;
+   padding: 1px 12px;
+}
+
+.nav-top-right {
+   float: right;
+   display: flex;
+   justify-content: space-around;
+
+  a {
+   opacity: 0.4;
+   color: white;
+   letter-spacing: 1px;
+   margin-right: 10px;
+   font-size: 14px;
+   text-transform: uppercase;
+   padding: 1px 8px;
+  }
+
+  a:hover {
+   color: #a3a4a3;
+   cursor: default;
+  }
+}
