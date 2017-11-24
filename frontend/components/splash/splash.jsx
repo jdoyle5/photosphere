@@ -52,7 +52,11 @@ class Splash extends React.Component {
           backDropClosesModal={ true }
           className={"modal"}
           overlayClassName={"modal-overlay"}
-        >
+          >
+          <button onClick={ this.modalClose }>
+            X
+          </button>
+
           <SessionFormContainer
             formChosen={ this.state.formChosen }
           />
