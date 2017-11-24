@@ -51,7 +51,7 @@ html {
    font-size: 14px;
    text-transform: uppercase;
    padding: 1px 12px;
-   font-family: 'Raleway Dots';
+   // font-family: 'Barlow Semi Condensed';
 }
 
 .splash-top-right {
@@ -60,14 +60,14 @@ html {
  justify-content: space-around;
 
  a {
-   opacity: .5;
+   opacity: 0.5;
    color: white;
    letter-spacing: 1px;
    margin-right: 10px;
    font-size: 14px;
    text-transform: uppercase;
    padding: 1px 8px;
-   font-family: 'Raleway Dots';
+   // font-family: 'Barlow Semi Condensed';
  }
 
  a:hover {
@@ -83,13 +83,13 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  opacity: .7;
+  opacity: 0.6;
 
 
   h1 {
     font-size: 40px;
     letter-spacing: 2px;
-    font-family: 'Raleway Dots'
+    // font-family: 'Barlow Semi Condensed'
   }
 
   button {

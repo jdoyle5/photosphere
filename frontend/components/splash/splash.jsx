@@ -42,7 +42,7 @@ class Splash extends React.Component {
 
           <div className="splash-top-right">
             <a onClick={() => this.modalOpen("Log In")}>Log In</a>
-          <a onClick={() => this.modalOpen("Sign Up")}>Sign Up</a>
+            <a onClick={() => this.modalOpen("Sign Up")}>Sign Up</a>
           </div>
         </nav>
 
@@ -59,7 +59,7 @@ class Splash extends React.Component {
         </Modal>
 
         <div className="guest-div">
-          <h1>There is no such thing as an ugly photo </h1>
+          <h1>Dare to explore.</h1>
         <button onClick={() => this.props.login({
             username: "guest",
             password: "password"
