@@ -30,6 +30,6 @@ export const destroyPhoto = id => (
 export const fetchUserPhotos = userId => (
   $.ajax({
     method: 'GET',
-    url: `api/users/`
+    url: `api/users/${userId}/photos`
   })
 );

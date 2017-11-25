@@ -11,6 +11,7 @@ class SessionForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.navLink = this.navLink.bind(this);
+    this.toggleForm = this.toggleForm.bind(this);
   }
 
   handleInput(type) {
@@ -45,12 +46,22 @@ class SessionForm extends React.Component {
   navLink() {
     if (this.state.formChosen === "Log In") {
       return (
-        <a onClick={() => this.setState({ formChosen: "Sign Up" })}>Sign Up</a>
+        <a onClick={this.toggleForm}>Not a member? <b>Sign Up</b></a>
       );
     } else {
       return (
-        <a onClick={() => this.setState({ formChosen: "Log In" })}>Log In</a>
+        <a onClick={this.toggleForm}>Already a member? <b>Log In</b></a>
       );
+    }
+  }
+
+  toggleForm() {
+    this.props.clearErrors();
+
+    if (this.state.formChosen === "Sign Up") {
+      this.setState({ formChosen: "Log In"});
+    } else {
+      this.setState({ formChosen: "Sign Up"});
     }
   }
 

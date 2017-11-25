@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { login, logout, signup } from '../../actions/session';
 import SessionForm from './session_form';
 
+import { clearErrors } from '../../actions/errors';
+
 
 const mapStateToProps = (state) => {
   return {
@@ -19,7 +21,8 @@ const mapDispatchToProps = (dispatch, { location }) => ({
   //   formChosen
   // };
   login: user => dispatch(login(user)),
-  signup: user => dispatch(signup(user))
+  signup: user => dispatch(signup(user)),
+  clearErrors: () => dispatch(clearErrors())
 });
 
 export default connect(

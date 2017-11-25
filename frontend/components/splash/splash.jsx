@@ -30,6 +30,7 @@ class Splash extends React.Component {
       modalOn: false,
       formChosen: ""
     });
+    this.props.clearErrors();
   }
 
   render () {

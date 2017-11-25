@@ -13,9 +13,13 @@
 .session-form-container a {
   cursor: default;
   font-weight: bold;
+
+  b {
+    text-decoration: underline;
+  }
 }
 
-.session-form-container a:hover {
+.session-form-container b:hover {
   color: #a3a4a3;
 }
 
