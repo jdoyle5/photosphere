@@ -18,4 +18,8 @@ class Photo < ApplicationRecord
     foreign_key: :owner_id,
     class_name: :User
 
+    def date_created
+      self.created_at
+    end
+
 end
