@@ -7,11 +7,9 @@ const mapStateToProps = state => ({
   photos: selectPhotos(state)
 });
 
-const mapDispatchToProps = dispatch => {
-  return {
+const mapDispatchToProps = dispatch => ({
     requestPhotos: () => dispatch(requestPhotos())
-  };
-};
+});
 
 export default connect(
   mapStateToProps,
