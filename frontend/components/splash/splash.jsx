@@ -15,9 +15,6 @@ class Splash extends React.Component {
     this.modalOpen = this.modalOpen.bind(this);
   }
 
-  // I found how to use the React Modal features from the following url:
-  // http://elemental-ui.com/modal
-  ////////////////////////////////////
   modalOpen(formChosen) {
     this.setState({
       modalOn: true,

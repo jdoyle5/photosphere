@@ -2,7 +2,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 // import { composeWithDevTools } from 'redux-devtools-extension';
 
-import rootReducer from '../reducers/root';
+import RootReducer from '../reducers/root';
 
 const middlewares = [thunk];
 
@@ -12,6 +12,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 export default (preloadedState = {}) => createStore(
-  rootReducer, preloadedState,
+  RootReducer, preloadedState,
   applyMiddleware(...middlewares)
 );

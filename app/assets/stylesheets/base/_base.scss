@@ -3,3 +3,9 @@
   flex-direction: column;
   min-height: 100%;
 }
+
+.main {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 60px);
+}

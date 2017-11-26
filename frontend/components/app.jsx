@@ -13,6 +13,7 @@ import sessionFormContainer from './session/session_form_container';
 import SplashContainer from './splash/splash_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import HomeContainer from './home/home_container';
+import PhotoIndexContainer from './photos/photo_index_container';
 
 
 const App = () => (
@@ -21,10 +22,10 @@ const App = () => (
       <ProtectedRoute path="/" component={NavBarContainer}/>
     </nav>
 
-    <div>
+    <main>
       <AuthRoute exact path="/" component={SplashContainer} />
-      <ProtectedRoute path="/home" component={HomeContainer} />
-    </div>
+      <ProtectedRoute path="/home" component={PhotoIndexContainer} />
+    </main>
   </div>
 );
 

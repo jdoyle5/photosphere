@@ -12,6 +12,7 @@ import { requestPhotos,
          createPhoto,
          deletePhoto,
          requestUserPhotos } from './actions/photo';
+import { selectPhotos } from './reducers/selectors';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -28,12 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
   window.dispatch = store.dispatch;
   // window.signup = signup;
   // window.login = login;
-  // window.logout = logout;
+  window.logout = logout;
   // window.fetchPhotos = fetchPhotos;
   // window.fetchPhoto = fetchPhoto;
   // window.postPhoto = postPhoto;
   // window.fetchUserPhotos = fetchUserPhotos;
   window.requestPhotos = requestPhotos;
+  window.requestPhoto = requestPhoto;
+  window.requestUserPhotos = requestUserPhotos;
+  window.selectPhotos = selectPhotos;
 
   ////////////////
   const root = document.getElementById('root');

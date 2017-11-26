@@ -2,20 +2,23 @@
  display: flex;
  justify-content: space-between;
  align-items: center;
- height: 40px;
- padding: 10px 15px;
  border: black;
  background-color: gray;
+ height: 40px;
+ padding: 10px 15px;
+ font-family: 'Barlow Semi Condensed';
+ margin: 0;
+ border: 0;
 }
 
 .nav-photosphere {
-   opacity: 0.6;
-   color: white;
-   letter-spacing: 1px;
-   margin-right: 10px;
+  color: white;
+   margin-right: 12px;
    font-size: 14px;
+   letter-spacing: 1px;
+   opacity: 0.6;
    text-transform: uppercase;
-   padding: 1px 12px;
+   padding: 2px 11px;
 }
 
 .nav-top-right {
@@ -24,11 +27,11 @@
    justify-content: space-around;
 
   a {
-   opacity: 0.6;
    color: white;
-   letter-spacing: 1px;
-   margin-right: 10px;
+   margin-right: 12px;
    font-size: 14px;
+   letter-spacing: 1px;
+   opacity: 0.6;
    text-transform: uppercase;
    padding: 1px 8px;
   }

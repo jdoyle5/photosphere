@@ -5,7 +5,7 @@ import { RECEIVE_PHOTOS,
          REMOVE_PHOTO
 } from '../actions/photo';
 
-const photoReducer = (state = {}, action) => {
+const PhotoReducer = (state = {}, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_PHOTOS:
@@ -21,3 +21,5 @@ const photoReducer = (state = {}, action) => {
       return state;
   }
 };
+
+export default PhotoReducer;
