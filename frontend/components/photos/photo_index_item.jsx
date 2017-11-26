@@ -47,7 +47,7 @@ class PhotoIndexItem extends React.Component {
     return (
       <div>
         <div className="tile">
-          <div className="photo-index-item-desc">
+          <div className="username-display">
             <Link to={`/users/${photo.owner_id}/photos`}
               className="username">{photo.username}
             </Link>
