@@ -18,6 +18,12 @@ class Photo < ApplicationRecord
     foreign_key: :owner_id,
     class_name: :User
 
+  has_many :comments,
+    primary_key: :id,
+    foreign_key: :photo_id,
+    class_name: :Comment
+
+
     def date_created
       self.created_at
     end
