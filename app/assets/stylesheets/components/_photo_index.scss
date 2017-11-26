@@ -40,7 +40,7 @@
 	// margin: 6px;
   // display: flex;
   // float: left;
-  // flex-direction: column;
+  flex-direction: column;
   img:hover {
     opacity: 0.9;
     cursor: pointer;
@@ -60,4 +60,20 @@
 
 .photo-array {
   display: inline-block;
+}
+
+.photo-index-item-desc {
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px;
+  opacity: 0.6;
+
+  a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .username {
+    font-size: 15px;
+    color: black;
+  }
 }

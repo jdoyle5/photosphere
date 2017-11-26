@@ -25,6 +25,7 @@ class PhotoUserIndexItem extends React.Component {
   }
 
   render() {
+    debugger;
     const { photo } = this.props;
     return (
       <div>
