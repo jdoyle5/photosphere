@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
 import Modal from 'react-modal';
 import PhotoShowContainer from './photo_show_container';
 

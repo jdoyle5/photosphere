@@ -6,12 +6,18 @@ class PhotoUserIndex extends React.Component {
     this.props.requestUserPhotos(this.props.match.params.userId);
   }
 
+  componentWillReceiveProps(newProps) {
+  if (this.props.match.params.userId !== newProps.match.params.userId) {
+    this.props.requestUserPhotos(newProps.match.params.userId);
+  }
+}
+
   render () {
     const { photos } = this.props;
 
     return (
       <div className="homepage">
-        <h2>All Activity</h2>
+        <h2>User Activity</h2>
         <div className="photos-home-index">
           {photos.map( photo =>
             <PhotoUserIndexItem key={photo.id} photo={photo}/>
@@ -22,4 +28,4 @@ class PhotoUserIndex extends React.Component {
   }
 }
 
-export default PhotoUserIndexItem;
+export default PhotoUserIndex;

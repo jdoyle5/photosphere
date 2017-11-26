@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import PhotoUserIndex from './photo_index';
+import PhotoUserIndex from './photo_user_index';
 import { selectPhotos } from '../../reducers/selectors';
 import { requestUserPhotos } from '../../actions/photo.js';
 

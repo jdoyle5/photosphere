@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = ({currentUser, logout}) => (
   <nav className="nav-top">
     <div className="nav-photosphere">
-      Photosphere
+      <Link to={"/home"}>Photosphere</Link>
     </div>
     <div className="nav-top-right">
-      <a>Profile</a>
+      <Link to={`/users/${currentUser.id}/photos`}>Profile</Link>
       <a onClick={logout}>Log Out</a>
     </div>
   </nav>
