@@ -57,21 +57,19 @@ class PhotoIndexItem extends React.Component {
           </a>
         </div>
 
-        {/* <Modal
+        <Modal
           isOpen={ this.state.modalOn }
           onRequestClose={ this.modalClose }
           backDropClosesModal={ true }
-          className={"modal"}
-          overlayClassName={"modal-overlay"}
+          className={"modal-photo-show"}
+          overlayClassName={"photo-show-overlay"}
           >
-          <button onClick={ this.modalClose }>
+          {/* <button onClick={ this.modalClose }>
             X
-          </button>
+          </button> */}
 
-          <SessionFormContainer
-            formChosen={ this.state.formChosen }
-          />
-        </Modal> */}
+          <PhotoShowContainer photo={photo}/>
+        </Modal>
       </div>
     );
   }
