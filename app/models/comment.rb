@@ -22,4 +22,5 @@ class Comment < ApplicationRecord
     primary_key: :id,
     foreign_key: :owner_id,
     class: :User
+
 end
