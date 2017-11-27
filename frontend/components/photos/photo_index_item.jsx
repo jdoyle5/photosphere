@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 import PhotoShowContainer from './photo_show_container';
+import CommentFormContainer from '../comments/comment_form_container';
 
 class PhotoIndexItem extends React.Component {
   constructor(props) {
@@ -52,6 +53,7 @@ class PhotoIndexItem extends React.Component {
           </button> */}
 
           <PhotoShowContainer photo={photo}/>
+          <CommentFormContainer photo={photo}/>
         </Modal>
       </div>
     );

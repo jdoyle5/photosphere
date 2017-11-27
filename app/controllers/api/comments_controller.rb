@@ -9,7 +9,7 @@ class Api::CommentsController < ApplicationController
 
   def create
     @comment = Comment.new(comment_params)
-    @comment.user_id = current_user.id
+    @comment.owner_id = current_user.id
     if @comment.save
       render :show
     else
@@ -24,7 +24,7 @@ class Api::CommentsController < ApplicationController
   end
 
   def show
-
+    @comment = Comment.find_by(id: params[:id])
   end
 
   def update

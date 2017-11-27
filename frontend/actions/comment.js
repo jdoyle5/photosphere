@@ -1,4 +1,4 @@
-import * as APIUtil from '../util/photo_api_util';
+import * as APIUtil from '../util/comment_api_util';
 import { receiveErrors } from '../actions/errors';
 
 export const RECEIVE_COMMENTS = 'RECEIVE_COMMENTS';

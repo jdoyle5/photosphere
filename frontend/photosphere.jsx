@@ -16,8 +16,8 @@ import { requestPhotos,
 
 import { requestComments,
          requestComment,
-         createComment,
-         deleteComment } from './actions/comment';
+         deleteComment,
+         postComment } from './actions/comment';
 
 
 import { selectPhotos } from './reducers/selectors';
@@ -47,10 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // window.requestPhotos = requestPhotos;
   // window.requestPhoto = requestPhoto;
   // window.requestUserPhotos = requestUserPhotos;
-  // window.selectPhotos = selectPhotos;
+  window.selectPhotos = selectPhotos;
   window.requestComments = requestComments;
   window.requestComment = requestComment;
   window.selectComments = selectComments;
+  window.postComment = postComment;
 
   ////////////////
   const root = document.getElementById('root');
