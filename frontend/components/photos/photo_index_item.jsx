@@ -3,23 +3,6 @@ import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 import PhotoShowContainer from './photo_show_container';
 
-// const PhotoIndexItem = ({photo}) => {
-//   return (
-//     <div className="tile">
-//       {/* <div className="photo-index-item-desc">
-//         <Link to={`/users/${photo.owner_id}/photos`}
-//           className="username">{photo.owner}
-//         </Link>
-//       </div> */}
-//       <Link to={`/photos/${photo.id}`}>
-//         <img key={photo.id} src={ photo.img_url }/>
-//       </Link>
-//     </div>
-//   );
-// };
-//
-// export default withRouter(PhotoIndexItem);
-
 class PhotoIndexItem extends React.Component {
   constructor(props) {
     super(props);

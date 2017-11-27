@@ -13,6 +13,7 @@
 .session-form-container a {
   cursor: default;
   font-weight: bold;
+  font-size: 15px;
 
   b {
     text-decoration: underline;
@@ -33,7 +34,7 @@
     margin-top: 18px;
     border: 1px solid gray;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     padding: 10px 30px 10px 30px;
   }
 
@@ -44,7 +45,7 @@
 
   input[type="submit"] {
     background-color: gray;
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 35px;
     border-radius: 5px;
     padding: 6px 16px 6px 16px;
@@ -54,4 +55,8 @@
   input[type="submit"]:hover {
     background-color: #a3a4a3;
   }
+}
+
+.error-list {
+  list-style-type: none;
 }

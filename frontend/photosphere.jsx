@@ -7,12 +7,22 @@ import { fetchPhotos,
          fetchPhoto,
          postPhoto,
          fetchUserPhotos } from './util/photo_api_util';
+
 import { requestPhotos,
          requestPhoto,
          createPhoto,
          deletePhoto,
          requestUserPhotos } from './actions/photo';
+
+import { requestComments,
+         requestComment,
+         createComment,
+         deleteComment } from './actions/comment';
+
+
 import { selectPhotos } from './reducers/selectors';
+import { selectComments } from './reducers/selectors';
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -34,10 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // window.fetchPhoto = fetchPhoto;
   // window.postPhoto = postPhoto;
   // window.fetchUserPhotos = fetchUserPhotos;
-  window.requestPhotos = requestPhotos;
-  window.requestPhoto = requestPhoto;
-  window.requestUserPhotos = requestUserPhotos;
-  window.selectPhotos = selectPhotos;
+  // window.requestPhotos = requestPhotos;
+  // window.requestPhoto = requestPhoto;
+  // window.requestUserPhotos = requestUserPhotos;
+  // window.selectPhotos = selectPhotos;
+  window.requestComments = requestComments;
+  window.requestComment = requestComment;
+  window.selectComments = selectComments;
 
   ////////////////
   const root = document.getElementById('root');

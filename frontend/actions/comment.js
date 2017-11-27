@@ -1,12 +1,12 @@
 import * as APIUtil from '../util/photo_api_util';
 import { receiveErrors } from '../actions/errors';
 
-export const RECIEVE_COMMENTS = 'RECIEVE_COMMENTS';
-export const RECEIVE_COMMENT = 'RECIVE_COMMENT';
+export const RECEIVE_COMMENTS = 'RECEIVE_COMMENTS';
+export const RECEIVE_COMMENT = 'RECEIVE_COMMENT';
 export const REMOVE_COMMENT = 'REMOVE_PHOTO';
 
 export const receiveComments = comments => ({
-  type: RECIEVE_COMMENTS,
+  type: RECEIVE_COMMENTS,
   comments
 });
 

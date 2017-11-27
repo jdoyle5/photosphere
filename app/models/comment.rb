@@ -11,7 +11,7 @@
 #
 
 class Comment < ApplicationRecord
-  validates :body, presence: true
+  validates :body, :owner_id, :photo_id, presence: true
 
   belongs_to :photo,
     primary_key: :id,
