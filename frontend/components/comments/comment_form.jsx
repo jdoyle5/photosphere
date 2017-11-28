@@ -31,11 +31,12 @@ componentWillMount() {
   }
 
   renderComments() {
+    const { photo, comments } = this.props;
     return (
       <div className="comments-scroll">
         <ul>
-          {this.props.comments.map (comment => (
-            <CommentFormItem key={comment.id} comment={comment} />
+          {comments.map (comment => (
+            <CommentFormItem key={comment.id} comment={comment} photo={photo} />
           ))}
         </ul>
       </div>
@@ -43,24 +44,36 @@ componentWillMount() {
   }
 
   render () {
-    const { currentUser, photo } = this.props;
+    const { currentUser, photo, likePhoto, unlikePhoto } = this.props;
+    let likeButtonText = "Like";
+    let likeButtonAction = () => likePhoto(photo.id);
+    if (photo.liked_by_current_user) {
+      likeButtonText = "Unlike";
+      likeButtonAction = () => unlikePhoto(photo.id);
+    }
 
     return(
-      <div className="comment-form-container">
-        {/* <form className="comment-form" onSubmit={this.handleSubmit}> */}
-        <div className="comment-form">
-          { this.renderComments() }
-          <div className="comment-div">
-            <textarea type="text"
-              value={this.state.body}
-              onChange={this.handleInput('body')}
-              placeholder="Add Comment"
-            />
-            {/* <input type="submit" value="Add Comment" /> */}
-            <button onClick={this.handleSubmit}>Add Comment</button>
+      <div className="comment-like">
+        <h3> {photo.title} </h3>
+        <p className="num-likes">Likes: {photo.likes}</p>
+        <button className="like-button" onClick={likeButtonAction}>{likeButtonText}</button>
+        <div className="comment-form-container">
+          {/* <form className="comment-form" onSubmit={this.handleSubmit}> */}
+
+          <div className="comment-form">
+            { this.renderComments() }
+            <div className="comment-div">
+              <textarea type="text"
+                value={this.state.body}
+                onChange={this.handleInput('body')}
+                placeholder="Add Comment"
+              />
+              {/* <input type="submit" value="Add Comment" /> */}
+              <button onClick={this.handleSubmit}>Add Comment</button>
+            </div>
           </div>
+          {/* </form> */}
         </div>
-        {/* </form> */}
       </div>
     );
   }

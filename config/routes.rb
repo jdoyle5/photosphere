@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     end
     resources :photos do
       resources :comments, only: [:index]
+      # resources :likes, only:[:create]
     end
   end
 end

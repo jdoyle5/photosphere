@@ -4,7 +4,7 @@ class Api::LikesController < ApplicationController
     @like.owner_id = current_user.id
     @like.photo_id = params[:photoId]
     if @like.save
-      @photo = like.photo
+      @photo = @like.photo
       render 'api/photos/show'
     else
       render json: @like.errors.full_messages, status: 401

@@ -14,20 +14,38 @@
 //   border-color: black;
 // }
 
-.comment-form-container {
+.comment-like {
   display: flex;
   flex-direction: column;
   color: gray;
   font-family: 'Barlow Semi Condensed';
   position: absolute;
   width: 45%;
-  height: 400px;
+  height: 500px;
   top: 33%;
   left: 74%;
   transform: translate(-50%, -50%);
   background-color: white;
   // border: 1px solid gray;
   border-radius: 5px;
+
+}
+
+.comment-form-container {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  font-family: 'Barlow Semi Condensed';
+  position: absolute;
+  width: 95%;
+  height: 400px;
+  top: 70%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  // border: 1px solid gray;
+  border-radius: 5px;
+
 }
 
 .comments-scroll {
@@ -103,4 +121,17 @@
       margin-bottom: 5px;
     }
   }
+}
+
+.num-likes {
+  padding: 5px, 5px, 5px, 5px;
+}
+.like-button {
+  font-size: 12px;
+  // background-color: gray;
+  // color: white;
+}
+
+h3 {
+  align: center;
 }
