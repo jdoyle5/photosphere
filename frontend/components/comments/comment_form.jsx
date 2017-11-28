@@ -45,10 +45,10 @@ componentWillMount() {
 
   render () {
     const { currentUser, photo, likePhoto, unlikePhoto } = this.props;
-    let likeButtonText = "Like";
+    let likeButtonText = <i class="fa fa-heart-o" aria-hidden="true"></i>;
     let likeButtonAction = () => likePhoto(photo.id);
     if (photo.liked_by_current_user) {
-      likeButtonText = "Unlike";
+      likeButtonText = <i class="fa fa-heart" aria-hidden="true"></i>;
       likeButtonAction = () => unlikePhoto(photo.id);
     }
 
