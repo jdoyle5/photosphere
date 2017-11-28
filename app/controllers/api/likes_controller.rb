@@ -1,7 +1,8 @@
 class Api::LikesController < ApplicationController
   def create
-    @like = Like.new(like_params)
+    @like = Like.new
     @like.owner_id = current_user.id
+    @like.photo_id = params[:photoId]
     if @like.save
       @photo = like.photo
       render 'api/photos/show'
@@ -11,7 +12,7 @@ class Api::LikesController < ApplicationController
   end
 
   def destroy
-    @like = Like.find_by(owner_id: current_user.id, photo_id: params[:id])
+    @like = Like.find_by(owner_id: current_user.id, photo_id: params[:photoId])
     @like.destroy
     @photo = @like.photo
     render 'api/photos/show'
