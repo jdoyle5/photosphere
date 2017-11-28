@@ -29,7 +29,7 @@ export const requestComment = commentId => dispatch => (
 );
 
 export const postComment = comment => dispatch => (
-  APIUtil.postComment(comment).then(commentObj => dispatch(receiveComment(comment)))
+  APIUtil.postComment(comment).then(commentObj => dispatch(receiveComment(commentObj)))
 );
 
 export const deleteComment = commentId => dispatch => (

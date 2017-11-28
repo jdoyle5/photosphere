@@ -2,10 +2,15 @@ import React from 'react';
 import { CommentFormItem } from './comment_form_item';
 
 class CommentForm extends React.Component {
+componentWillMount() {
+  this.props.requestComments(this.props.photo.id);
+}
+
   constructor(props) {
     super(props);
     this.state = {
       body: "",
+      owner_id: this.props.currentUser,
       photo_id: this.props.photo.id
     };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -42,12 +47,14 @@ class CommentForm extends React.Component {
       <div className="comment-form-container">
         <form className="comment-form" onSubmit={this.handleSubmit}>
           { this.renderComments() }
-          <input type="text"
-            value={this.state.body}
-            onChange={this.handleInput('body')}
-            placeholder="Add Comment"
-          />
-          <input type="submit" value="Submit" />
+          <div className="comment-div">
+            <input type="text"
+              value={this.state.body}
+              onChange={this.handleInput('body')}
+              placeholder="Add Comment"
+            />
+            <input type="submit" value="Add Comment" />
+          </div>
         </form>
       </div>
     );
