@@ -23,6 +23,11 @@ class Photo < ApplicationRecord
     foreign_key: :photo_id,
     class_name: :Comment
 
+  has_many :likes,
+    primary_key: :id,
+    foreign_key: :photo_id,
+    class_name: :Like
+
 
     def date_created
       self.created_at

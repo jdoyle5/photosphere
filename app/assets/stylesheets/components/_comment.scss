@@ -22,12 +22,16 @@
   position: absolute;
   width: 45%;
   height: 400px;
-  top: 34%;
+  top: 33%;
   left: 74%;
   transform: translate(-50%, -50%);
   background-color: white;
-  border: 1px solid gray;
+  // border: 1px solid gray;
   border-radius: 5px;
+}
+
+.comments-scroll {
+  overflow: auto;
 }
 
 .comment-form {
@@ -35,20 +39,20 @@
   display: flex;
   flex-direction: column;
 
-  input {
-    margin-top: 25px;
+  textarea {
+    margin-top: 10px;
     border: 1px solid gray;
     font-size: 15px;
-    padding: 10px 30px 10px 30px;
-    width: 100px;
+    width: 200px;
+    height: 50px
   }
 
-  input::-webkit-input-placeholder {
+  textarea::-webkit-input-placeholder {
     color: #B9B9B9;
-    text-align: center;
+    text-align: left;
   }
 
-  input[type="submit"] {
+  button {
     background-color: gray;
     font-size: 15px;
     margin-top: 10px;
@@ -58,7 +62,7 @@
     width: 85px;
   }
 
-  input[type="submit"]:hover {
+  button:hover {
     background-color: #a3a4a3;
   }
 }
@@ -66,7 +70,7 @@
 .comment-div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .comment-owner-body {

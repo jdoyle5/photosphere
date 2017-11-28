@@ -32,11 +32,13 @@ componentWillMount() {
 
   renderComments() {
     return (
-      <ul>
-        {this.props.comments.map (comment => (
-          <CommentFormItem key={comment.id} comment={comment} />
-        ))}
-      </ul>
+      <div className="comments-scroll">
+        <ul>
+          {this.props.comments.map (comment => (
+            <CommentFormItem key={comment.id} comment={comment} />
+          ))}
+        </ul>
+      </div>
     );
   }
 
@@ -45,17 +47,20 @@ componentWillMount() {
 
     return(
       <div className="comment-form-container">
-        <form className="comment-form" onSubmit={this.handleSubmit}>
+        {/* <form className="comment-form" onSubmit={this.handleSubmit}> */}
+        <div className="comment-form">
           { this.renderComments() }
           <div className="comment-div">
-            <input type="text"
+            <textarea type="text"
               value={this.state.body}
               onChange={this.handleInput('body')}
               placeholder="Add Comment"
             />
-            <input type="submit" value="Add Comment" />
+            {/* <input type="submit" value="Add Comment" /> */}
+            <button onClick={this.handleSubmit}>Add Comment</button>
           </div>
-        </form>
+        </div>
+        {/* </form> */}
       </div>
     );
   }
