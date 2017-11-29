@@ -28,6 +28,15 @@ class Photo < ApplicationRecord
     foreign_key: :photo_id,
     class_name: :Like
 
+  has_many :taggings,
+    primary_key: :id,
+    foreign_key: :photo_id,
+    class_name: :Tagging
+
+  has_many :tags,
+    through: :taggings,
+    source: :tag
+
 
     def date_created
       self.created_at
