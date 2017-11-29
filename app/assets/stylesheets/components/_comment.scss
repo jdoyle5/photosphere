@@ -20,14 +20,29 @@
   color: gray;
   font-family: 'Barlow Semi Condensed';
   position: absolute;
-  width: 45%;
+  width: 40%;
   height: 500px;
-  top: 33%;
+  top: 45%;
   left: 74%;
   transform: translate(-50%, -50%);
   background-color: white;
   // border: 1px solid gray;
   border-radius: 5px;
+
+  h2, h3 {
+    text-align: center;
+    margin: 3px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    border-bottom: 1px solid gray;
+    // margin-bottom: 7px;
+    padding: 5px;
+  }
 
 }
 
@@ -53,7 +68,7 @@
 }
 
 .comment-form {
-  padding: 10px;
+  padding: 7px;
   display: flex;
   flex-direction: column;
 
@@ -124,14 +139,25 @@
 }
 
 .num-likes {
-  padding: 5px, 5px, 5px, 5px;
+  width: 20%;
+  margin-left: 3px;
 }
 .like-button {
-  font-size: 12px;
+  font-size: 18px;
+  width: 4%;
+  margin-top: 10px;
+  margin-left: 5px;
+  left: 10%;
+  // color: black;
   // background-color: gray;
   // color: white;
 }
 
-h3 {
-  align: center;
+.comment-username {
+  margin-left: 7px;
+  color: black;
+}
+
+.comment-username:hover {
+  opacity: 0.6;
 }

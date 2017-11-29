@@ -38,22 +38,22 @@ photo9 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload
 photo10 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505716/Photo_Nov_01_3_44_52_PM_xpcdym.jpg",
   title: "Pony Up", owner_id: 5)
 photo11 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505716/Photo_May_12_5_02_34_PM_2_rlmmp1.jpg",
-  title: "Can't Feel My Face", owner_id: 3)
+  title: "Can't Feel My Face", owner_id: 6)
 photo12 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505713/Photo_Dec_12_12_12_28_AM_r3cb6h.jpg",
-  title: "Powder", owner_id: 3)
+  title: "Powder", owner_id: 32)
 photo13 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505717/Photo_Nov_21_8_26_54_PM_ez0di8.jpg",
-  title: "Through The Looking Glass", owner_id: 3)
+  title: "Through The Looking Glass", owner_id: 5)
 photo14 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505716/Photo_Nov_20_10_02_29_PM_xiycil.jpg",
-  title: "Enough is Enough", owner_id: 3)
+  title: "Enough is Enough", owner_id: 6)
 photo15 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505718/Photo_Nov_21_8_56_30_PM_hnqxnt.jpg",
   title: "What A Lovely Day", owner_id: 3)
 photo16 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505713/Photo_Dec_11_9_57_25_PM_wngnew.jpg",
-  title: "Spoon Full", owner_id: 3)
+  title: "Spoon Full", owner_id: 5)
 photo17 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505714/Photo_May_12_4_57_20_PM_1_jdd1j2.jpg",
-  title: "Crash Course", owner_id: 3)
+  title: "Crash Course", owner_id: 4)
 photo18 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505713/Photo_Aug_16_11_32_29_AM_ctojcy.jpg",
-  title: "No Diving", owner_id: 3)
+  title: "No Diving", owner_id: 6)
 photo19 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505711/Photo_Aug_15_4_36_59_PM_uwqgyo.jpg",
-  title: "Stop Spinning", owner_id: 3)
+  title: "Stop Spinning", owner_id: 1)
 photo20 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505719/Photo_Nov_27_6_59_31_PM_ynyesk.jpg",
-  title: "Sand", owner_id: 3)
+  title: "Sand", owner_id: 5)

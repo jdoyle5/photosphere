@@ -1,5 +1,6 @@
 import React from 'react';
 import { CommentFormItem } from './comment_form_item';
+import { Link } from 'react-router-dom';
 
 class CommentForm extends React.Component {
 componentWillMount() {
@@ -45,20 +46,25 @@ componentWillMount() {
 
   render () {
     const { currentUser, photo, likePhoto, unlikePhoto } = this.props;
-    let likeButtonText = <i class="fa fa-heart-o" aria-hidden="true"></i>;
+    let likeButtonText = <i className="fa fa-heart-o" aria-hidden="true"></i>;
     let likeButtonAction = () => likePhoto(photo.id);
     if (photo.liked_by_current_user) {
-      likeButtonText = <i class="fa fa-heart" aria-hidden="true"></i>;
+      likeButtonText = <i className="fa fa-heart" aria-hidden="true"></i>;
       likeButtonAction = () => unlikePhoto(photo.id);
     }
 
     return(
       <div className="comment-like">
-        <h3> {photo.title} </h3>
-        <p className="num-likes">Likes: {photo.likes}</p>
+        <h2 className="h2-comment"> {photo.title} </h2>
+        <h3>by:
+          <Link to={`/users/${photo.owner_id}/photos`}
+            className="comment-username">{photo.username}
+          </Link>
+        </h3>
         <button className="like-button" onClick={likeButtonAction}>{likeButtonText}</button>
-        <div className="comment-form-container">
-          {/* <form className="comment-form" onSubmit={this.handleSubmit}> */}
+      <p className="num-likes">{photo.likes} likes</p>
+          <div className="comment-form-container">
+            {/* <form className="comment-form" onSubmit={this.handleSubmit}> */}
 
           <div className="comment-form">
             { this.renderComments() }
