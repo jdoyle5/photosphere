@@ -12,16 +12,19 @@ import { requestPhotos,
          requestPhoto,
          createPhoto,
          deletePhoto,
-         requestUserPhotos } from './actions/photo';
+         requestUserPhotos,
+         requestTagPhotos } from './actions/photo';
 
 import { requestComments,
          requestComment,
          deleteComment,
          postComment } from './actions/comment';
 
+import * as APIUtil from './util/tag_api_util';
+import { requestTags, requestTag } from './actions/tag';
 
-import { selectPhotos } from './reducers/selectors';
-import { selectComments } from './reducers/selectors';
+
+import { selectPhotos, selectComments, selectTags } from './reducers/selectors';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -47,11 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // window.requestPhotos = requestPhotos;
   // window.requestPhoto = requestPhoto;
   // window.requestUserPhotos = requestUserPhotos;
-  window.selectPhotos = selectPhotos;
-  window.requestComments = requestComments;
-  window.requestComment = requestComment;
-  window.selectComments = selectComments;
-  window.postComment = postComment;
+  // window.selectPhotos = selectPhotos;
+  // window.requestComments = requestComments;
+  // window.requestComment = requestComment;
+  // window.selectComments = selectComments;
+  // window.postComment = postComment;
+  window.fetchTag = APIUtil.fetchTag;
+  window.postTag = APIUtil.posttag;
+  window.fetchTags = APIUtil.fetchTags;
+  window.requestTags = requestTags;
+  window.requestTag = requestTag;
+  window.requestTagPhotos = requestTagPhotos;
+  window.selectTags = selectTags;
+
 
   ////////////////
   const root = document.getElementById('root');

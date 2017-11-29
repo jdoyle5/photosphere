@@ -1,5 +1,5 @@
 import * as APIUtil from '../util/comment_api_util';
-import { receiveErrors } from '../actions/errors';
+// import { receiveErrors } from '../actions/errors';
 
 export const RECEIVE_COMMENTS = 'RECEIVE_COMMENTS';
 export const RECEIVE_COMMENT = 'RECEIVE_COMMENT';

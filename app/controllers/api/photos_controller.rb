@@ -2,6 +2,8 @@ class Api::PhotosController < ApplicationController
   def index
     if params[:user_id]
       @photos = User.find(params[:user_id]).photos
+    elsif params[:tag_id]
+      @photos = Tag.find(params[:tag_id]).tagged_photos
     else
       @photos = Photo.all
     end

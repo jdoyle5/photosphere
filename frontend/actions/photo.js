@@ -39,3 +39,7 @@ export const deletePHoto = photoId => dispatch => (
 export const requestUserPhotos = userId => dispatch => (
   APIUtil.fetchUserPhotos(userId).then(photos => dispatch(receivePhotos(photos)))
 );
+
+export const requestTagPhotos = tagId => dispatch => (
+  APIUtil.fetchTagPhotos(tagId).then(photos => dispatch(receivePhotos(photos)))
+);

@@ -40,7 +40,7 @@ photo10 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/uploa
 photo11 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505716/Photo_May_12_5_02_34_PM_2_rlmmp1.jpg",
   title: "Can't Feel My Face", owner_id: 6)
 photo12 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505713/Photo_Dec_12_12_12_28_AM_r3cb6h.jpg",
-  title: "Powder", owner_id: 32)
+  title: "Powder", owner_id: 2)
 photo13 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505717/Photo_Nov_21_8_26_54_PM_ez0di8.jpg",
   title: "Through The Looking Glass", owner_id: 5)
 photo14 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505716/Photo_Nov_20_10_02_29_PM_xiycil.jpg",

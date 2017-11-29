@@ -1,4 +1,12 @@
 class Api::TagsController < ApplicationController
+  def index
+    if params[:photo_id]
+      @tags = Photo.find(params[:photo_id]).tags
+    else
+      @tags = Tag.all
+    end 
+  end
+
   def create
     @tag = Tag.new(tag_params)
     if @tag.save

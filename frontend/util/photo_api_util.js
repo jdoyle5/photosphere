@@ -33,3 +33,10 @@ export const fetchUserPhotos = userId => (
     url: `api/users/${userId}/photos`
   })
 );
+
+export const fetchTagPhotos = tagId => (
+  $.ajax({
+    method: 'GET',
+    url: `api/tags/${tagId}/photos`
+  })
+);

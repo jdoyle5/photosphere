@@ -13,3 +13,8 @@ export const selectComments = state => {
     new Date(com2.created_at) - new Date(com1.created_at)
   ));
 };
+
+export const selectTags = state => {
+  let tags = values(state.entities.tags);
+  return tags.map(tag => (tag));
+};
