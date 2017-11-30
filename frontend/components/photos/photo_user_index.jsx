@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoUserIndexItem from './photo_index_item';
+import PhotoUserIndexItem from './photo_user_index_item';
 
 class PhotoUserIndex extends React.Component {
   componentWillMount() {

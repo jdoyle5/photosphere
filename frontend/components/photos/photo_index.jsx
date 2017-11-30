@@ -1,5 +1,6 @@
 import React from 'react';
 import PhotoIndexItem from './photo_index_item';
+import { Link } from 'react-router-dom';
 
 class PhotoIndex extends React.Component {
   componentWillMount() {
@@ -11,7 +12,11 @@ class PhotoIndex extends React.Component {
 
     return (
       <div className="index-photo-display">
-        <h2>All Activity</h2>
+        <div className="tag-options">
+          <Link to={`/tags/1/photos`}>Drone</Link>
+          <Link to={`/tags/2/photos`}>Portrait</Link>
+          <Link to={`/tags/3/photos`}>Landscape</Link>
+        </div>
       <div className="index-sub-display">
           {photos.map( photo =>
             <PhotoIndexItem key={photo.id} photo={photo}/>

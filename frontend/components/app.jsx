@@ -15,6 +15,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import HomeContainer from './home/home_container';
 import PhotoIndexContainer from './photos/photo_index_container';
 import PhotoUserIndexContainer from './photos/photo_user_index_container';
+import PhotoTagIndexContainer from './photos/photo_tag_index_container';
 
 
 const App = () => (
@@ -28,6 +29,7 @@ const App = () => (
         <AuthRoute exact path="/" component={SplashContainer} />
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
         <ProtectedRoute path="/users/:userId/photos" component={PhotoUserIndexContainer} />
+        <ProtectedRoute path="/tags/:tagId/photos" component={PhotoTagIndexContainer} />
       </Switch>
     </main>
   </div>
