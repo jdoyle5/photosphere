@@ -1,21 +1,32 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  opacity: 0.9;
+}
+
 .nav-top {
  display: flex;
  justify-content: space-between;
  align-items: center;
  border: black;
- background-color: gray;
+ background-color: white;
  height: 40px;
  padding: 10px 15px;
  font-family: 'Barlow Semi Condensed';
  margin: 0;
  border: 0;
+ border-bottom: 1px solid lightgray;
 }
 
 .nav-photosphere {
-  color: white;
+  color: black;
    margin-right: 12px;
    font-size: 14px;
-   letter-spacing: 1px;
+   letter-spacing: 0.5px;
    opacity: 0.6;
    text-transform: uppercase;
    padding: 2px 11px;
@@ -32,10 +43,10 @@
    justify-content: space-around;
 
   a {
-   color: white;
+   color: black;
    margin-right: 12px;
    font-size: 14px;
-   letter-spacing: 1px;
+   letter-spacing: 0.5px;
    opacity: 0.6;
    text-transform: uppercase;
    padding: 1px 8px;

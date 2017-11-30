@@ -20,10 +20,9 @@ import PhotoTagIndexContainer from './photos/photo_tag_index_container';
 
 const App = () => (
   <div className="everything">
-    <nav className="navbar">
+    <div className="navbar">
       <ProtectedRoute path="/" component={NavBarContainer}/>
-    </nav>
-
+    </div>
     <main>
       <Switch>
         <AuthRoute exact path="/" component={SplashContainer} />
