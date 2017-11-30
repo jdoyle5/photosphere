@@ -57,3 +57,18 @@ photo19 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/uploa
   title: "Stop Spinning", owner_id: 1)
 photo20 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1511505719/Photo_Nov_27_6_59_31_PM_ynyesk.jpg",
   title: "Sand", owner_id: 5)
+
+  rand_tags = [
+  tag1 = Tag.create(name: "drone"),
+  tag2 = Tag.create(name: "portrait"),
+  tag3 = Tag.create(name: "landscape"),
+  ]
+
+
+  tagging1 = Tagging.create(photo_id: photo1.id, tag_id: tag1.id)
+  (1..Photo.count-1).each do |photoId|
+    random_tags = rand_tags.sample(2)
+    random_tags.each do |tag|
+      Tagging.create!(photo_id: photoId, tag_id: tag.id)
+    end
+  end

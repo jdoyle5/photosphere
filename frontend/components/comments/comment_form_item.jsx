@@ -5,7 +5,7 @@ export const CommentFormItem = ({ comment }) => {
   return (
     <div className="comments-section">
       <div className="comment-owner-body">
-        <Link to={`users/${comment.owner_id}/photos`}>
+        <Link to={`/users/${comment.owner_id}/photos`}>
           { comment.username }
         </Link>
         <p> { comment.body } </p>

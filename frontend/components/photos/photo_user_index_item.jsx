@@ -1,6 +1,8 @@
 import React from 'react';
 import Modal from 'react-modal';
 import PhotoShowContainer from './photo_show_container';
+import { Link } from 'react-router-dom';
+import CommentFormContainer from '../comments/comment_form_container';
 
 class PhotoUserIndexItem extends React.Component {
   constructor(props) {
@@ -30,6 +32,11 @@ class PhotoUserIndexItem extends React.Component {
     return (
       <div>
         <div className="tile">
+          <div className="username-display">
+            <Link to={`/users/${photo.owner_id}/photos`}
+              className="username">{photo.username}
+            </Link>
+          </div>
           <a onClick={() => this.modalOpen()}>
             <img key={photo.id} src={ photo.img_url }/>
           </a>
@@ -47,6 +54,7 @@ class PhotoUserIndexItem extends React.Component {
           </button> */}
 
           <PhotoShowContainer photo={photo}/>
+          <CommentFormContainer photo={photo}/>
         </Modal>
       </div>
     );
