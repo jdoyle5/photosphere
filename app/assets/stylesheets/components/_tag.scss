@@ -2,8 +2,17 @@
   padding: 3px, 3px, 3px, 3px;
   background-color: gray;
   color: white;
+  margin-right: 8px;
+  border-radius: 5px;
+  padding: 2px 4px 2px 4px;
+  padding-bottom: 4px;
+
 }
 
 .tag-div {
-  
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  font-size: 15px
+
 }

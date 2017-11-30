@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 class CommentForm extends React.Component {
 componentWillMount() {
   this.props.requestComments(this.props.photo.id);
+  this.props.requestTags(this.props.photo.id);
 }
 
   constructor(props) {
@@ -49,11 +50,9 @@ componentWillMount() {
     const { tags } = this.props;
     return (
       <div className="tag-div">
-        <ul>
           {tags.map (tag => (
             <TagItem key={tag.id} tag={tag} />
           ))}
-        </ul>
       </div>
     );
   }
@@ -87,6 +86,7 @@ componentWillMount() {
                 placeholder="Add a comment..."
               />
               <br/>
+              {this.renderTags()}
             </div>
           </form>
         </div>
