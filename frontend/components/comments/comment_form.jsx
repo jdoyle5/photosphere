@@ -1,5 +1,6 @@
 import React from 'react';
 import { CommentFormItem } from './comment_form_item';
+import { TagItem } from '../tag/tag_item';
 import { Link } from 'react-router-dom';
 
 class CommentForm extends React.Component {
@@ -44,6 +45,19 @@ componentWillMount() {
     );
   }
 
+  renderTags() {
+    const { tags } = this.props;
+    return (
+      <div className="tag-div">
+        <ul>
+          {tags.map (tag => (
+            <TagItem key={tag.id} tag={tag} />
+          ))}
+        </ul>
+      </div>
+    );
+  }
+
   render () {
     const { currentUser, photo, likePhoto, unlikePhoto } = this.props;
     let likeButtonText = <i className="fa fa-heart-o" aria-hidden="true"></i>;
@@ -62,23 +76,19 @@ componentWillMount() {
           </Link>
         </h3>
         <button className="like-button" onClick={likeButtonAction}>{likeButtonText}</button>
-      <p className="num-likes">{photo.likes} likes</p>
-          <div className="comment-form-container">
-            {/* <form className="comment-form" onSubmit={this.handleSubmit}> */}
-
-          <div className="comment-form">
-            { this.renderComments() }
+        <p className="num-likes">{photo.likes} likes</p>
+        <div className="comment-form-container">
+          <form onSubmit={this.handleSubmit} className="comment-form">
+            {this.renderComments()}
             <div className="comment-div">
-              <textarea type="text"
+              <input type="text"
                 value={this.state.body}
                 onChange={this.handleInput('body')}
-                placeholder="Add Comment"
+                placeholder="Add a comment..."
               />
-              {/* <input type="submit" value="Add Comment" /> */}
-              <button onClick={this.handleSubmit}>Add Comment</button>
+              <br/>
             </div>
-          </div>
-          {/* </form> */}
+          </form>
         </div>
       </div>
     );

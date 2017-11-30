@@ -20,9 +20,9 @@
   color: gray;
   font-family: 'Barlow Semi Condensed';
   position: absolute;
-  width: 40%;
+  width: 41%;
   height: 500px;
-  top: 45%;
+  top: 50%;
   left: 74%;
   transform: translate(-50%, -50%);
   background-color: white;
@@ -52,8 +52,8 @@
   color: gray;
   font-family: 'Barlow Semi Condensed';
   position: absolute;
-  width: 95%;
-  height: 400px;
+  width: 91%;
+  height: 430px;
   top: 70%;
   left: 46%;
   -webkit-transform: translate(-50%, -50%);
@@ -65,19 +65,21 @@
 
 .comments-scroll {
   overflow: auto;
+  // border-bottom: 1px solid gray;
 }
 
 .comment-form {
-  padding: 7px;
+  // padding: 7px;
   display: flex;
   flex-direction: column;
+  height: 200px;
 
   textarea {
     margin-top: 10px;
     border: 1px solid gray;
     font-size: 15px;
     width: 200px;
-    height: 50px
+    height: 50px;
   }
 
   textarea::-webkit-input-placeholder {
@@ -104,6 +106,33 @@
   display: flex;
   flex-direction: column;
   align-items: left;
+  position: fixed;
+  top: 200px;
+  // padding-top: 15px;
+  width: 100%;
+
+  input[type="submit"] {
+    background-color: gray;
+    font-size: 15px;
+    // margin-top: 15px;
+    border-radius: 5px;
+    padding: 6px 6px 6px 6px;
+    color: white;
+  }
+
+  input[type="text"] {
+    background-color: white;
+    font-size: 15px;
+    // border: 1px solid gray;
+    padding: 6px 6px 6px 6px;
+    width: 100%;
+    border-top: .1px solid lightgray;
+    // border-bottom: .5px solid gray;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #a3a4a3;
+  }
 }
 
 .comment-owner-body {

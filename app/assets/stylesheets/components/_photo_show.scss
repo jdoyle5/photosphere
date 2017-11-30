@@ -12,6 +12,10 @@
   // opacity: 0.96;
 }
 
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
 .photo-show-overlay {
  position: fixed;
  top: 0;
