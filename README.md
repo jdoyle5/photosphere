@@ -20,5 +20,14 @@
 
 ![demo2](https://github.com/jdoyle5/photosphere/blob/master/Dec-01-2017%2013-43-36-2.gif)
 
-### Use of columns and media queries to display photos dinamically
+### Use of columns and media queries to display photos dynamically
+Users will see that the photo columns will resize depending on how big their browser window is.
+
 ![demo3](https://github.com/jdoyle5/photosphere/blob/master/dynamic-columns.gif)
+
+## Future Additions
+
+### Upload Photos
+User upload of photos (Plan on being GA 3-4 weeks from now)
+### Add Albums
+User creation of albums of photos
