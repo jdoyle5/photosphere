@@ -1,12 +1,12 @@
 import React from 'react';
-import PhotoTagIndexItem from './photo_index_item';
+import PhotoTagIndexItem from './photo_tag_index_item';
 import { Link } from 'react-router-dom';
 
 class PhotoTagIndex extends React.Component {
 
   // This functiono will take in the tagId that I pass in down in the
   // render function (either 1, 2, or 3) and compare it to the tagId in
-  // the current url. 
+  // the current url.
   underline (tagId) {
     return (tagId === this.props.match.params.tagId) ?
       "underline" : "no-underline";

@@ -4,7 +4,7 @@ import PhotoShowContainer from './photo_show_container';
 import { Link } from 'react-router-dom';
 import CommentFormContainer from '../comments/comment_form_container';
 
-class PhotoUserIndexItem extends React.Component {
+class PhotoTagIndexItem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,6 +13,12 @@ class PhotoUserIndexItem extends React.Component {
     this.modalClose = this.modalClose.bind(this);
     this.modalOpen = this.modalOpen.bind(this);
   }
+
+  // componentWillReceiveProps(newProps) {
+  //   if (this.props.match.params.tagId !== newProps.match.params.tagId) {
+  //     this.setState({modalOn: false});
+  //   }
+  // }
 
   modalOpen() {
     this.setState({
@@ -53,7 +59,7 @@ class PhotoUserIndexItem extends React.Component {
           </button> */}
 
           <PhotoShowContainer photo={photo}/>
-          <CommentFormContainer photo={photo}/>
+          <CommentFormContainer photo={photo} modalClose={this.modalClose}/>
         </Modal>
       </div>
     );
@@ -61,4 +67,4 @@ class PhotoUserIndexItem extends React.Component {
 
 }
 
-export default PhotoUserIndexItem;
+export default PhotoTagIndexItem;

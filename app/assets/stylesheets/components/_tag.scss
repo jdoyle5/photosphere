@@ -4,15 +4,23 @@
   color: white;
   margin-right: 8px;
   border-radius: 5px;
-  padding: 2px 4px 2px 4px;
+  padding: 0px 6px 0px 6px;
   padding-bottom: 4px;
 
+  a {
+    font-family: 'Barlow Semi Condensed';
+    font-weight: lighter;
+    font-size: 14px;
+  }
 }
 
 .tag-div {
   display: flex;
-  flex-direction: row;
-  width: 80%;
-  font-size: 15px
+  flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+  // width: 80%;
+  // font-size: 15px;
+  margin-left: 5px;
 
 }

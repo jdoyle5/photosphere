@@ -51,7 +51,7 @@ componentWillMount() {
     return (
       <div className="tag-div">
           {tags.map (tag => (
-            <TagItem key={tag.id} tag={tag} />
+            <TagItem key={tag.id} tag={tag} modalClose={this.props.modalClose}/>
           ))}
       </div>
     );
@@ -86,7 +86,7 @@ componentWillMount() {
                 placeholder="Add a comment..."
               />
               <br/>
-              {this.renderTags()}
+            {this.renderTags()}
             </div>
           </form>
         </div>
