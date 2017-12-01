@@ -21,4 +21,4 @@
 ![demo2](https://github.com/jdoyle5/photosphere/blob/master/Dec-01-2017%2013-43-36-2.gif)
 
 ### Use of columns and media queries to display photos dinamically
-
+![demo3](https://github.com/jdoyle5/photosphere/blob/master/dynamic-columns.gif)
