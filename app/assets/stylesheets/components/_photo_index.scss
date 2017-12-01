@@ -64,7 +64,6 @@
 .tile:hover {
   opacity: 0.9;
 
-
   .username {
     visibility: visible;
   }
@@ -117,4 +116,9 @@
 
 .no-underline {
 
+}
+
+.user-activity {
+  font-family: 'Barlow Semi Condensed';
+  color: gray;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { CommentFormItem } from './comment_form_item';
+import CommentFormItem from './comment_form_item';
 import { TagItem } from '../tag/tag_item';
 import { Link } from 'react-router-dom';
 
@@ -34,12 +34,16 @@ componentWillMount() {
   }
 
   renderComments() {
-    const { photo, comments } = this.props;
+    const { photo, comments, currentUser } = this.props;
     return (
       <div className="comments-scroll">
         <ul>
           {comments.map (comment => (
-            <CommentFormItem key={comment.id} comment={comment} photo={photo} />
+            <CommentFormItem key={comment.id}
+              comment={comment}
+              photo={photo}
+              deleteComment={this.props.deleteComment}
+              currentUser={currentUser}/>
           ))}
         </ul>
       </div>
@@ -86,6 +90,7 @@ componentWillMount() {
                 placeholder="Add a comment..."
               />
               <br/>
+            <div className="tags-title-div">Tags:</div>
             {this.renderTags()}
             </div>
           </form>

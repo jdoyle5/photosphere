@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // window.requestComment = requestComment;
   // window.selectComments = selectComments;
   // window.postComment = postComment;
+  window.deleteComment = deleteComment;
   window.fetchTag = APIUtil.fetchTag;
   window.postTag = APIUtil.posttag;
   window.fetchTags = APIUtil.fetchTags;

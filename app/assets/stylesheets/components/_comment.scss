@@ -65,6 +65,7 @@
 
 .comments-scroll {
   overflow: auto;
+  width: 350px;
   // border-bottom: 1px solid gray;
 }
 
@@ -74,32 +75,29 @@
   flex-direction: column;
   height: 200px;
 
-  textarea {
-    margin-top: 10px;
-    border: 1px solid gray;
-    font-size: 15px;
-    width: 200px;
-    height: 50px;
-  }
+  // textarea {
+  //   margin-top: 10px;
+  //   border: 1px solid gray;
+  //   font-size: 15px;
+  //   width: 200px;
+  //   height: 50px;
+  // }
+  //
+  // textarea::-webkit-input-placeholder {
+  //   color: #B9B9B9;
+  //   text-align: left;
+  // }
 
-  textarea::-webkit-input-placeholder {
-    color: #B9B9B9;
-    text-align: left;
-  }
+  // button {
+  //   background-color: gray;
+  //   font-size: 15px;
+  //   margin-top: 10px;
+  //   border-radius: 5px;
+  //   padding: 5px 5px 5px 5px;
+  //   color: white;
+  //   width: 85px;
+  // }
 
-  button {
-    background-color: gray;
-    font-size: 15px;
-    margin-top: 10px;
-    border-radius: 5px;
-    padding: 5px 5px 5px 5px;
-    color: white;
-    width: 85px;
-  }
-
-  button:hover {
-    background-color: #a3a4a3;
-  }
 }
 
 .comment-div {
@@ -189,4 +187,19 @@
 
 .comment-username:hover {
   opacity: 0.6;
+}
+
+.delete-comment {
+  font-size: 15px;
+}
+
+.delete-comment:hover {
+  opacity: 0.6;
+}
+
+.comment-body-and-delete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 290px;
 }
