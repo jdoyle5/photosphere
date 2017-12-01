@@ -17,5 +17,5 @@
 
 ### Use of React Modal
 
-(https://github.com/jdoyle5/photosphere/blob/master/Dec-01-2017%2013-11-11.mp4)
+![demo1](https://github.com/jdoyle5/photosphere/blob/master/Dec-01-2017%2013-11-11.mp4)
 
