@@ -16,5 +16,7 @@
 * Authenticated user accounts
 
 ### Use of React Modal
+![demo1](https://github.com/jdoyle5/photosphere/blob/master/Dec-01-2017%2013-41-38.gif)
 
+![demo2](https://github.com/jdoyle5/photosphere/blob/master/Dec-01-2017%2013-43-36-2.gif)
 
