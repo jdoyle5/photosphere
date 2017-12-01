@@ -497,7 +497,9 @@ rand_comments = ["This is ridiculous! Great job with the colors.",
   "I really like this one a lot",
   "This makes me want to travel!",
   "So dope!",
-  "Where is this??"]
+  "Where is this??",
+  "Wow I'm so jealous",
+  "So coooooooool"]
 
 
   (1..Photo.count-1).each do |photo_id|
