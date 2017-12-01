@@ -45,3 +45,5 @@ Users will see that the photo columns will resize depending on how big their bro
 User upload of photos (Plan on being GA 3-4 weeks from now)
 ### Add Albums
 User creation of albums of photos
+### Implementation of Stripe
+Users will be allowed to buy and sell photos from their gallery using Stripe.
