@@ -40,10 +40,13 @@ Users will see that the photo columns will resize depending on how big their bro
 ![demo3](https://github.com/jdoyle5/photosphere/blob/master/dynamic-columns.gif)
 
 ## Future Additions
-
 ### Upload Photos
-User upload of photos (Plan on being GA 3-4 weeks from now)
+Utilization of Cloudinary's photo upload feature that will allow the user to grag and drop photos to upload. (Plan on being GA 3-4 weeks from now)
 ### Add Albums
 User creation of albums of photos
 ### Implementation of Stripe
 Users will be allowed to buy and sell photos from their gallery using Stripe.
+### Infinite Scroll
+Loading each individual photo from the database can be very time consuming and makes for an unpleasant user experience. Implementing infinite scroll will load only the photos that will be seen on the page at that time. Once the user starts scrolling, more photos will be loaded on to the page.
+### User Profile Images
+Users will be able to have their own profile image to be displayed. (Plan on being GA 3-4 weeks from now)
