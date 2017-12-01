@@ -63,7 +63,7 @@ class Splash extends React.Component {
         <div className="guest-div">
           <h1>Dare to explore.</h1>
         <button onClick={() => this.props.login({
-            username: "guest",
+            username: "guest_user",
             password: "password"
           })}>
           Guest
