@@ -10,10 +10,12 @@
 * SCSS
 
 ## Features
-* User commenting on photos
-* User likes on photos
-* User can view photos by tags
 * Authenticated user accounts
+* User can comment on photos
+* User can like photos
+* User can view photos by tags
+* gallerys organized by tag, user, etc.
+
 
 ### Photos
 Users can view the photo index on the site upon logging in, as well as the drone, portrait, and landscape gallerys.
