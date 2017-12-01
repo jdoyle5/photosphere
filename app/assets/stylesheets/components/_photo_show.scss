@@ -61,3 +61,13 @@
 		border-radius: 2px;
   }
 }
+
+.close-modal-x {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 2.5%;
+  left: 97.8%;
+  -webkit-transform: translate(-50%, -50%);
+  color: gray;
+}

@@ -473,6 +473,7 @@ tagging88 = Tagging.create(photo_id: photo88.id, tag_id: tag2.id)
 
 tagging89 = Tagging.create(photo_id: photo89.id, tag_id: tag3.id)
 
+
 rand_tags = [
 tag4 = Tag.create(name: "lovely"),
 tag5 = Tag.create(name: "awesome"),
@@ -481,10 +482,44 @@ tag7 = Tag.create(name: "crazy"),
 tag8 = Tag.create(name: "cool"),
 ]
 
-
 (1..Photo.count-1).each do |photoId|
   random_tags = rand_tags.sample(3)
-  rand_tags.each do |tag|
+  random_tags.each do |tag|
     Tagging.create!(photo_id: photoId, tag_id: tag.id)
   end
+end
+
+
+rand_comments = ["This is ridiculous! Great job with the colors.",
+  "Wooo amazing!",
+  "Love this one",
+  "Super cool!",
+  "I really like this one a lot",
+  "This makes me want to travel!",
+  "So dope!",
+  "Where is this??"]
+
+
+  (1..Photo.count-1).each do |photo_id|
+    random_comments = rand_comments.sample(1)
+    user_nums = (1..User.all.count).to_a
+    random_comments.each do |comment|
+      user_id = user_nums.sample
+      Comment.create!(body: comment, owner_id: user_id, photo_id: photo_id)
+    end
+  end
+
+  (1..Photo.count-1).each do |photo_id|
+    random_comments = rand_comments.sample(1)
+    user_nums = (1..User.all.count).to_a
+    random_comments.each do |comment|
+      user_id = user_nums.sample
+      Comment.create!(body: comment, owner_id: user_id, photo_id: photo_id)
+    end
+  end
+
+
+Photo.all.each do |photo|
+  photo.created_at = Date.today - rand(10).days
+  photo.save
 end

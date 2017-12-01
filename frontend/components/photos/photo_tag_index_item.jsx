@@ -54,12 +54,15 @@ class PhotoTagIndexItem extends React.Component {
           className={"modal-photo-show"}
           overlayClassName={"photo-show-overlay"}
           >
-          {/* <button onClick={ this.modalClose }>
-            X
-          </button> */}
 
           <PhotoShowContainer photo={photo}/>
           <CommentFormContainer photo={photo} modalClose={this.modalClose}/>
+
+          <button className="close-modal-x">
+            <i className="fa fa-times"
+            onClick={ this.modalClose }
+            aria-hidden="true"></i></button>
+
         </Modal>
       </div>
     );
