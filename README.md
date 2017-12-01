@@ -1,24 +1,21 @@
-# README
+# Photosphere
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Photosphere](https://photosphere-aa.herokuapp.com/#/) is a web application inspired by 500 Pixels and Flickr. It allows users to create a gallery of photos to show to other users. 
+## Technologies Used
+* PostgreSQL
+* Ruby on Rails
+* React.js
+* Redux
+* JQuery
+* SCSS
 
-Things you may want to cover:
+## Features
+* User commenting on photos
+* User likes on photos
+* User can view photos by tags
+* Authenticated user accounts
 
-* Ruby version
+### Use of React Modal
 
-* System dependencies
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
