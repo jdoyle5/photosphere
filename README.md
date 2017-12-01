@@ -15,6 +15,18 @@
 * User can view photos by tags
 * Authenticated user accounts
 
+### Photos
+Users can view the photo index on the site upon logging in, as well as the drone, portrait, and landscape gallerys.
+
+### Liking Photos
+Users can like/unlike any photos on any other user's gallery as well as their own photos on their own gallery.
+
+### Tags
+Photos can be grouped by tags and put in to their own gallerys. Tags for a specific photo will be added to the photo show page and are direct links to each tag photo gallery.
+
+### comments
+Users can leave comments on each individual photo in a gallery. They can also delete comments that belong to them
+
 ### Use of React Modal
 ![demo1](https://github.com/jdoyle5/photosphere/blob/master/Dec-01-2017%2013-41-38.gif)
 
