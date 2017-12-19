@@ -18,7 +18,8 @@
 
 
 ### Photos
-Users can view the photo index on the site upon logging in, as well as the drone, portrait, and landscape gallerys.
+Users can view the photo index on the site upon logging in, as well as the drone, portrait, and landscape galleries.
+They can also view their own photos if they click on their profile tab up at the top.
 
 ### Liking Photos
 Users can like/unlike any photos on any other user's gallery as well as their own photos on their own gallery.
