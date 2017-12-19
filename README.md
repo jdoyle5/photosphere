@@ -37,6 +37,7 @@ Users can leave comments on each individual photo in a gallery. They can also de
 
 ### Use of columns and media queries to display photos dynamically
 Users will see that the photo columns will resize depending on how big their browser window is.
+This allows users to view the photos on all mobile platforms as well.
 
 ![demo3](https://github.com/jdoyle5/photosphere/blob/master/Docs/dynamic-columns.gif)
 
