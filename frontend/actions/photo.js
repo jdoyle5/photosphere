@@ -20,6 +20,8 @@ export const removePhoto = photo => ({
   photo
 });
 
+// This thunk function will add request all photos from the database
+// and dispatch them to the store
 export const requestPhotos = () => dispatch => (
   APIUtil.fetchPhotos().then(photos => dispatch(receivePhotos(photos)))
 );
