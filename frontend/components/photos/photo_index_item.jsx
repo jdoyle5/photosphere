@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 import PhotoShowContainer from './photo_show_container';
-import CommentFormContainer from '../comments/comment_form_container';
+
 
 class PhotoIndexItem extends React.Component {
   constructor(props) {
@@ -48,11 +48,9 @@ class PhotoIndexItem extends React.Component {
           className={"modal-photo-show"}
           overlayClassName={"photo-show-overlay"}
           >
-
           <PhotoShowContainer photo={photo}/>
-          <CommentFormContainer photo={photo}/>
 
-        <button className="close-modal-x">
+          <button className="close-modal-x">
           <i className="fa fa-times"
           onClick={ this.modalClose }
           aria-hidden="true"></i></button>
