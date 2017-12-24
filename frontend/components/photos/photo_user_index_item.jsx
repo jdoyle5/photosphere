@@ -50,7 +50,6 @@ class PhotoUserIndexItem extends React.Component {
           >
 
           <PhotoShowContainer photo={photo}/>
-          <CommentFormContainer photo={photo}/>
 
           <button className="close-modal-x">
             <i className="fa fa-times"

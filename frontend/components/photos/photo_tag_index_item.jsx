@@ -56,7 +56,6 @@ class PhotoTagIndexItem extends React.Component {
           >
 
           <PhotoShowContainer photo={photo}/>
-          <CommentFormContainer photo={photo} modalClose={this.modalClose}/>
 
           <button className="close-modal-x">
             <i className="fa fa-times"
