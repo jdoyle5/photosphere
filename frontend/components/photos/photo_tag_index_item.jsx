@@ -55,7 +55,7 @@ class PhotoTagIndexItem extends React.Component {
           overlayClassName={"photo-show-overlay"}
           >
 
-          <PhotoShowContainer photo={photo}/>
+          <PhotoShowContainer photo={photo} modalClose={this.modalClose}/>
 
           <button className="close-modal-x">
             <i className="fa fa-times"
