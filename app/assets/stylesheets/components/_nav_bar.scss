@@ -41,11 +41,6 @@
    float: right;
    display: flex;
    justify-content: space-around;
-
-  a:hover {
-   color: #a3a4a3;
-   cursor: pointer;
-  }
 }
 
 .link-username {
@@ -65,8 +60,13 @@
   flex-direction: row;
 }
 
+.navbar-user:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 .navbar-photo {
-  width: 45px;
+  width: 40px;
   display: block;
   -webkit-box-flex: 0;
   flex: none;
@@ -103,4 +103,9 @@
   flex-direction: column;
   align-items: center;
   padding-top: 6px;
+}
+
+.navbar-username:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
