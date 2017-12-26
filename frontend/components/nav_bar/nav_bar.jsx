@@ -17,7 +17,7 @@ const NavBar = ({currentUser, logout}) => (
           <Link to={`/users/${currentUser.id}/photos`} className="link-username">{currentUser.username}</Link>
         </div>
       </div>
-      <div className="navbar-username">
+      <div className="navbar-logout">
         <a className="link-username" onClick={logout}>Log Out</a>
       </div>
     </div>
