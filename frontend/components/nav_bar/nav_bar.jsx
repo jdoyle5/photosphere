@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Added the user's image to sit next to the user's name in the navbar. 
 const NavBar = ({currentUser, logout}) => (
   <div className="navbar">
   <nav className="nav-top">
