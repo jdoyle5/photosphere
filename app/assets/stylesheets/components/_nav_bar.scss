@@ -33,7 +33,7 @@
 
    a:hover {
     color: #a3a4a3;
-    cursor: default;
+    cursor: pointer;
    }
 }
 
@@ -42,7 +42,13 @@
    display: flex;
    justify-content: space-around;
 
-  a {
+  a:hover {
+   color: #a3a4a3;
+   cursor: pointer;
+  }
+}
+
+.link-username {
    color: black;
    margin-right: 12px;
    font-size: 14px;
@@ -55,12 +61,6 @@
    // color: gray;
    // font-size: 17px;
    z-index: 9999;
-  }
-
-  a:hover {
-   color: #a3a4a3;
-   cursor: default;
-  }
 }
 
 .navbar-user {
@@ -69,8 +69,8 @@
 }
 
 .navbar-photo {
-  width: 50px;
-  border-radius: 50%;
+  width: 45px;
+  // border-radius: 80%;
   display: block;
   -webkit-box-flex: 0;
   flex: none;
@@ -82,13 +82,15 @@
   img {
     height: 100%;
     width: 100%;
+    opacity: 1;
+    border-radius: 50%;
+    vertical-align: baseline;
   }
 
   a {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #fafafa;
-    border-radius: 50%;
     box-sizing: border-box;
     cursor: pointer;
     display: block;
@@ -98,4 +100,11 @@
     overflow: hidden;
     position: relative;
   }
+}
+
+.navbar-username {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6px;
 }

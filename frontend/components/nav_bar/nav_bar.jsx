@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Added the user's image to sit next to the user's name in the navbar. 
+// Added the user's image to sit next to the user's name in the navbar.
 const NavBar = ({currentUser, logout}) => (
   <div className="navbar">
   <nav className="nav-top">
@@ -13,9 +13,13 @@ const NavBar = ({currentUser, logout}) => (
         <div className="navbar-photo">
           <Link to={`/users/${currentUser.id}/photos`}><img src={ currentUser.img_url }/></Link>
         </div>
-        <Link to={`/users/${currentUser.id}/photos`}>{currentUser.username}</Link>
+        <div className="navbar-username">
+          <Link to={`/users/${currentUser.id}/photos`} className="link-username">{currentUser.username}</Link>
+        </div>
       </div>
-      <a onClick={logout}>Log Out</a>
+      <div className="navbar-username">
+        <a className="link-username" onClick={logout}>Log Out</a>
+      </div>
     </div>
   </nav>
 </div>

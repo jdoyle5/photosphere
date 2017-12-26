@@ -13,9 +13,9 @@ Tag.destroy_all
 Tagging.destroy_all
 
 user1= User.create(username: "guest_user", password: "password",
-  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514248928/30147-Deadpool.1200w.tn_xidu5q.jpg")
+  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514315356/deadpool_vybajl.jpg")
 user2 = User.create(username: "james_howlett", password: "password",
-  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514248549/wolverine_qqxoa0.gif")
+  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514315449/Wolverine_zwu94z.jpg")
 user3 = User.create(username: "peter_parker", password: "password",
   img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514248549/spiderman_gjgcqr.jpg")
 user4 = User.create(username: "bobby_drake", password: "password",
