@@ -32,9 +32,16 @@ class PhotoUserIndexItem extends React.Component {
       <div>
         <div className="tile">
           <div className="username-display">
-            <Link to={`/users/${photo.owner_id}/photos`}
-              className="username">{photo.username}
-            </Link>
+            <div className="photo-index-user">
+              <Link to={`/users/${photo.owner_id}/photos`}>
+                <img src={photo.user_photo}/>
+              </Link>
+            </div>
+            <div className="photo-index-username">
+              <Link to={`/users/${photo.owner_id}/photos`}
+                className="username">{photo.username}
+              </Link>
+            </div>
           </div>
           <a onClick={() => this.modalOpen()}>
             <img key={photo.id} src={ photo.img_url }/>
