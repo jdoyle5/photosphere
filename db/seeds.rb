@@ -12,12 +12,18 @@ Like.destroy_all
 Tag.destroy_all
 Tagging.destroy_all
 
-user1= User.create(username: "guest_user", password: "password")
-user2 = User.create(username: "james_howlett", password: "password")
-user3 = User.create(username: "peter_parker", password: "password")
-user4 = User.create(username: "bobby_drake", password: "password")
-user5 = User.create(username: "barry_allen", password: "password")
-user6 = User.create(username: "peter_quill", password: "password")
+user1= User.create(username: "guest_user", password: "password",
+  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514248928/30147-Deadpool.1200w.tn_xidu5q.jpg")
+user2 = User.create(username: "james_howlett", password: "password",
+  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514248549/wolverine_qqxoa0.gif")
+user3 = User.create(username: "peter_parker", password: "password",
+  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514248549/spiderman_gjgcqr.jpg")
+user4 = User.create(username: "bobby_drake", password: "password",
+  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514248549/Iceman-780x585_mis8bn.jpg")
+user5 = User.create(username: "barry_allen", password: "password",
+  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514248549/the_flash_siefx3.jpg")
+user6 = User.create(username: "peter_quill", password: "password",
+  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514248549/peter_quill_joiard.jpg")
 
 
 photo1 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Sep_18_9_53_45_PM_ulstti.jpg",

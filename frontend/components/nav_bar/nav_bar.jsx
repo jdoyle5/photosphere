@@ -8,7 +8,12 @@ const NavBar = ({currentUser, logout}) => (
       <Link to={"/home"}>Photosphere</Link>
     </div>
     <div className="nav-top-right">
-      <Link to={`/users/${currentUser.id}/photos`}>{currentUser.username}</Link>
+      <div className="navbar-user">
+        <div className="navbar-photo">
+          <Link to={`/users/${currentUser.id}/photos`}><img src={ currentUser.img_url }/></Link>
+        </div>
+        <Link to={`/users/${currentUser.id}/photos`}>{currentUser.username}</Link>
+      </div>
       <a onClick={logout}>Log Out</a>
     </div>
   </nav>

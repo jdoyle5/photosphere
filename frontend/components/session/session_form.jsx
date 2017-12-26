@@ -22,13 +22,18 @@ class SessionForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const formUser = {
-      username: this.state.username,
-      password: this.state.password
-    };
     if(this.state.formChosen === "Log In") {
+      const formUser = {
+        username: this.state.username,
+        password: this.state.password
+      };
       this.props.login(formUser);
     } else {
+      const formUser = {
+        username: this.state.username,
+        password: this.state.password,
+        img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514246424/Unknown_Person_wx5iar.png"
+      };
       this.props.signup(formUser);
     }
   }
