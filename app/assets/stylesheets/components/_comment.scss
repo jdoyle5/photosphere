@@ -59,7 +59,7 @@
 .comments-scroll {
   overflow: auto;
   width: 380px;
-  max-height: 200px;
+  max-height: 280px;
   margin-left: 5px;
   // border-bottom: 1px solid gray;
 }
@@ -69,7 +69,7 @@
   flex-direction: column;
   align-items: left;
   // position: fixed;
-  top: 200px;
+  top: 10px;
   // padding-top: 15px;
   width: 100%;
   margin-left: 5px;
@@ -81,6 +81,7 @@
     border-radius: 5px;
     padding: 6px 6px 6px 6px;
     color: white;
+
   }
 
   input[type="text"] {
@@ -90,7 +91,7 @@
     padding: 6px 6px 6px 6px;
     width: 350px;
     border-top: .1px solid lightgray;
-    // border-bottom: .5px solid gray;
+    margin-top: 5px;
   }
 
   input[type="submit"]:hover {
