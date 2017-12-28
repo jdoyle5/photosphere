@@ -78,9 +78,7 @@
   img {
     height: 100%;
     width: auto;
-    // border-radius: 50%;
-    // vertical-align: baseline;
-    margin-left: -5%;
+    margin-left: -5%; // This will help center the photo
   }
 
   a {
@@ -95,7 +93,7 @@
     flex: 0 0 auto;
     overflow: hidden;
     position: relative;
-    border-radius: 50%;
+    border-radius: 50%; // This creates a circular crop on the photo 
   }
 }
 
