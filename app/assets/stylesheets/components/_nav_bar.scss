@@ -77,10 +77,10 @@
 
   img {
     height: 100%;
-    width: 100%;
-    opacity: 1;
-    border-radius: 50%;
-    vertical-align: baseline;
+    width: auto;
+    // border-radius: 50%;
+    // vertical-align: baseline;
+    margin-left: -5%;
   }
 
   a {
@@ -95,6 +95,7 @@
     flex: 0 0 auto;
     overflow: hidden;
     position: relative;
+    border-radius: 50%;
   }
 }
 
