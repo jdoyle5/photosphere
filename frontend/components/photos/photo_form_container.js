@@ -8,11 +8,10 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = (dispatch, { history }) => {
-  return {
-    createPhoto: (post) => dispatch(createPhoto(post)).then(() => history.push('/posts'))
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  createPhoto: (photo) => dispatch(createPhoto(photo))
+});
+
 
 export default connect(
   mapStateToProps,
