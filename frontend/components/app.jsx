@@ -16,6 +16,7 @@ import HomeContainer from './home/home_container';
 import PhotoIndexContainer from './photos/photo_index_container';
 import PhotoUserIndexContainer from './photos/photo_user_index_container';
 import PhotoTagIndexContainer from './photos/photo_tag_index_container';
+import PhotoFormContainer from './photos/photo_form_container';
 
 
 const App = () => (
@@ -27,6 +28,7 @@ const App = () => (
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
         <ProtectedRoute path="/users/:userId/photos" component={PhotoUserIndexContainer} />
         <ProtectedRoute path="/tags/:tagId/photos" component={PhotoTagIndexContainer} />
+        <ProtectedRoute path="/upload" component={PhotoFormContainer} />
       </Switch>
     </main>
   </div>
