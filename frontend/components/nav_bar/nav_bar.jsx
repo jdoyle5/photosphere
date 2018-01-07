@@ -9,7 +9,7 @@ const NavBar = ({currentUser, logout}) => (
       <Link to={"/home"}>Photosphere</Link>
     </div>
     <div className="nav-top-right">
-      <div>
+      <div className="photo-upload">
         <Link to={"/upload"}><span><i className="fa fa-plus" aria-hidden="true"></i></span></Link>
       </div>
       <div className="navbar-user">

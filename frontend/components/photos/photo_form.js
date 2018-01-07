@@ -5,7 +5,7 @@ import request from 'superagent';
 
 const CLOUDINARY_UPLOAD_PRESET = 'photosphere_image_upload';
 const CLOUDINARY_UPLOAD_URL =
-  'https://api.cloudinary.com/v1_1/photosphere/image/upload';
+'https://api.cloudinary.com/v1_1/photosphere/image/upload';
 
 class PhotoForm extends React.Component {
   constructor(props) {
