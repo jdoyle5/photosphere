@@ -236,62 +236,62 @@ photo69 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/uploa
 photo70 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_02_9_05_30_PM_vrkbp6.jpg",
   title: "Sunset Eyes", owner_id: 4)
 
-photo71 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_13_12_46_52_PM_qapi7z.jpg",
-  title: "Flannel Bridge", owner_id: 1)
-
-photo72 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_24_5_03_54_PM_vsecoy.jpg",
-  title: "Jetty Waves", owner_id: 6)
-
-photo73 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_12_7_28_56_PM_dmm1jv.jpg",
-  title: "White Sky Pier", owner_id: 3)
-
-photo74 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_13_12_41_28_PM_im70mo.jpg",
-  title: "Ocean View", owner_id: 5)
-
-photo75 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_12_7_04_39_PM_y4eox5.jpg",
-  title: "Cape Coastline", owner_id: 2)
-
-photo76 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_03_5_00_45_AM_wdysjw.jpg",
-  title: "Watchu Lookin At", owner_id: 5)
-
-photo77 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_13_1_40_29_PM_ujtrlt.jpg",
-  title: "Hairy Face", owner_id: 6)
-
-photo78 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_01_5_04_37_AM_joihtl.jpg",
-  title: "Jungle Cruisin", owner_id: 1)
-
-photo79 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Dec_26_9_25_00_PM_azhbgh.jpg",
-  title: "First Date", owner_id: 4)
-
-photo80 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_13_1_28_15_PM_a3rhvf.jpg",
-  title: "Blurry Coastline", owner_id: 2)
-
-photo81 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Dec_11_1_35_47_PM_ki5rsa.jpg",
-  title: "Can't Feel My Face", owner_id: 3)
-
-photo82 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109868/Photo_Dec_04_9_22_14_PM_vnynkr.jpg",
-  title: "Sandy Toes", owner_id: 5)
-
-photo83 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109868/Photo_Apr_27_9_08_39_PM_xywrbb.jpg",
-  title: "Muddy Shoes", owner_id: 6)
-
-photo84 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_27_6_14_03_PM_wjw0sb.jpg",
-  title: "Film Cameras", owner_id: 1)
-
-photo85 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_27_5_06_02_PM_zg2ycl.jpg",
-  title: "Foggy Days", owner_id: 2)
-
-photo86 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_24_1_03_38_PM_yf6aat.jpg",
-  title: "Blue Mountains", owner_id: 3)
-
-photo87 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_22_3_35_25_PM_ukcxjq.jpg",
-  title: "Final Destination", owner_id: 1)
-
-photo88 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_22_3_36_22_PM_kyawl2.jpg",
-  title: "Pitch Fork Portrait", owner_id: 5)
-
-photo89 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Sep_28_10_55_27_PM_dp8wyj.jpg",
-  title: "Blue Palm Trees", owner_id: 4)
+# photo71 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_13_12_46_52_PM_qapi7z.jpg",
+#   title: "Flannel Bridge", owner_id: 1)
+#
+# photo72 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_24_5_03_54_PM_vsecoy.jpg",
+#   title: "Jetty Waves", owner_id: 6)
+#
+# photo73 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_12_7_28_56_PM_dmm1jv.jpg",
+#   title: "White Sky Pier", owner_id: 3)
+#
+# photo74 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_13_12_41_28_PM_im70mo.jpg",
+#   title: "Ocean View", owner_id: 5)
+#
+# photo75 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_12_7_04_39_PM_y4eox5.jpg",
+#   title: "Cape Coastline", owner_id: 2)
+#
+# photo76 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_03_5_00_45_AM_wdysjw.jpg",
+#   title: "Watchu Lookin At", owner_id: 5)
+#
+# photo77 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_13_1_40_29_PM_ujtrlt.jpg",
+#   title: "Hairy Face", owner_id: 6)
+#
+# photo78 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_01_5_04_37_AM_joihtl.jpg",
+#   title: "Jungle Cruisin", owner_id: 1)
+#
+# photo79 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Dec_26_9_25_00_PM_azhbgh.jpg",
+#   title: "First Date", owner_id: 4)
+#
+# photo80 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_13_1_28_15_PM_a3rhvf.jpg",
+#   title: "Blurry Coastline", owner_id: 2)
+#
+# photo81 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Dec_11_1_35_47_PM_ki5rsa.jpg",
+#   title: "Can't Feel My Face", owner_id: 3)
+#
+# photo82 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109868/Photo_Dec_04_9_22_14_PM_vnynkr.jpg",
+#   title: "Sandy Toes", owner_id: 5)
+#
+# photo83 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109868/Photo_Apr_27_9_08_39_PM_xywrbb.jpg",
+#   title: "Muddy Shoes", owner_id: 6)
+#
+# photo84 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_27_6_14_03_PM_wjw0sb.jpg",
+#   title: "Film Cameras", owner_id: 1)
+#
+# photo85 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_27_5_06_02_PM_zg2ycl.jpg",
+#   title: "Foggy Days", owner_id: 2)
+#
+# photo86 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_24_1_03_38_PM_yf6aat.jpg",
+#   title: "Blue Mountains", owner_id: 3)
+#
+# photo87 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_22_3_35_25_PM_ukcxjq.jpg",
+#   title: "Final Destination", owner_id: 1)
+#
+# photo88 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_22_3_36_22_PM_kyawl2.jpg",
+#   title: "Pitch Fork Portrait", owner_id: 5)
+#
+# photo89 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Sep_28_10_55_27_PM_dp8wyj.jpg",
+#   title: "Blue Palm Trees", owner_id: 4)
 
 
 
@@ -441,43 +441,43 @@ tagging69 = Tagging.create(photo_id: photo69.id, tag_id: tag2.id)
 
 tagging70 = Tagging.create(photo_id: photo70.id, tag_id: tag2.id)
 
-tagging71 = Tagging.create(photo_id: photo71.id, tag_id: tag2.id)
-
-tagging72 = Tagging.create(photo_id: photo72.id, tag_id: tag1.id)
-
-tagging73 = Tagging.create(photo_id: photo73.id, tag_id: tag2.id)
-
-tagging74 = Tagging.create(photo_id: photo74.id, tag_id: tag3.id)
-
-tagging75 = Tagging.create(photo_id: photo75.id, tag_id: tag3.id)
-
-tagging76 = Tagging.create(photo_id: photo76.id, tag_id: tag2.id)
-
-tagging77 = Tagging.create(photo_id: photo77.id, tag_id: tag2.id)
-
-tagging78 = Tagging.create(photo_id: photo78.id, tag_id: tag3.id)
-
-tagging79 = Tagging.create(photo_id: photo79.id, tag_id: tag3.id)
-
-tagging80 = Tagging.create(photo_id: photo80.id, tag_id: tag3.id)
-
-tagging81 = Tagging.create(photo_id: photo81.id, tag_id: tag2.id)
-
-tagging82 = Tagging.create(photo_id: photo82.id, tag_id: tag2.id)
-
-tagging83 = Tagging.create(photo_id: photo83.id, tag_id: tag2.id)
-
-tagging84 = Tagging.create(photo_id: photo84.id, tag_id: tag2.id)
-
-tagging85 = Tagging.create(photo_id: photo85.id, tag_id: tag3.id)
-
-tagging86 = Tagging.create(photo_id: photo86.id, tag_id: tag3.id)
-
-tagging87 = Tagging.create(photo_id: photo87.id, tag_id: tag2.id)
-
-tagging88 = Tagging.create(photo_id: photo88.id, tag_id: tag2.id)
-
-tagging89 = Tagging.create(photo_id: photo89.id, tag_id: tag3.id)
+# tagging71 = Tagging.create(photo_id: photo71.id, tag_id: tag2.id)
+#
+# tagging72 = Tagging.create(photo_id: photo72.id, tag_id: tag1.id)
+#
+# tagging73 = Tagging.create(photo_id: photo73.id, tag_id: tag2.id)
+#
+# tagging74 = Tagging.create(photo_id: photo74.id, tag_id: tag3.id)
+#
+# tagging75 = Tagging.create(photo_id: photo75.id, tag_id: tag3.id)
+#
+# tagging76 = Tagging.create(photo_id: photo76.id, tag_id: tag2.id)
+#
+# tagging77 = Tagging.create(photo_id: photo77.id, tag_id: tag2.id)
+#
+# tagging78 = Tagging.create(photo_id: photo78.id, tag_id: tag3.id)
+#
+# tagging79 = Tagging.create(photo_id: photo79.id, tag_id: tag3.id)
+#
+# tagging80 = Tagging.create(photo_id: photo80.id, tag_id: tag3.id)
+# 
+# tagging81 = Tagging.create(photo_id: photo81.id, tag_id: tag2.id)
+#
+# tagging82 = Tagging.create(photo_id: photo82.id, tag_id: tag2.id)
+#
+# tagging83 = Tagging.create(photo_id: photo83.id, tag_id: tag2.id)
+#
+# tagging84 = Tagging.create(photo_id: photo84.id, tag_id: tag2.id)
+#
+# tagging85 = Tagging.create(photo_id: photo85.id, tag_id: tag3.id)
+#
+# tagging86 = Tagging.create(photo_id: photo86.id, tag_id: tag3.id)
+#
+# tagging87 = Tagging.create(photo_id: photo87.id, tag_id: tag2.id)
+#
+# tagging88 = Tagging.create(photo_id: photo88.id, tag_id: tag2.id)
+#
+# tagging89 = Tagging.create(photo_id: photo89.id, tag_id: tag3.id)
 
 
 rand_tags = [
@@ -504,7 +504,10 @@ rand_comments = ["This is ridiculous! Great job with the colors.",
   "This makes me want to travel!",
   "So dope!",
   "Where is this??",
-  "Wow I'm so jealous"]
+  "Wow I'm so jealous",
+  "So awesome!",
+  "What kind of camera do you use?",
+  "I love the crop!"]
 
 
   (1..Photo.count-1).each do |photo_id|
