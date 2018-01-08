@@ -4,10 +4,10 @@ import { TagItem } from '../tag/tag_item';
 import { Link } from 'react-router-dom';
 
 class CommentForm extends React.Component {
-componentWillMount() {
-  this.props.requestComments(this.props.photo.id);
-  this.props.requestTags(this.props.photo.id);
-}
+  // componentWillMount() {
+  //   this.props.requestComments(this.props.photo.id);
+  //   this.props.requestTags(this.props.photo.id);
+  // }
 
   constructor(props) {
     super(props);
@@ -61,6 +61,15 @@ componentWillMount() {
     );
   }
 
+  renderLikes () {
+    const { photo } = this.props;
+    if (photo.likes === 1) {
+      return <p className="num-likes">{photo.likes} like</p>;
+    } else {
+      return <p className="num-likes">{photo.likes} likes</p>;
+    }
+  }
+
   render () {
     const { currentUser, photo, likePhoto, unlikePhoto } = this.props;
     let likeButtonText = <i className="fa fa-heart-o" aria-hidden="true"></i>;
@@ -69,6 +78,7 @@ componentWillMount() {
       likeButtonText = <i className="fa fa-heart" aria-hidden="true"></i>;
       likeButtonAction = () => unlikePhoto(photo.id);
     }
+
 
     return(
       <div className="comment-like">
@@ -79,7 +89,7 @@ componentWillMount() {
           </Link>
         </h3>
         <button className="like-button" onClick={likeButtonAction}>{likeButtonText}</button>
-        <p className="num-likes">{photo.likes} likes</p>
+        {this.renderLikes()}
         <div className="comment-form-container">
           <form onSubmit={this.handleSubmit} className="comment-form">
             {this.renderComments()}
