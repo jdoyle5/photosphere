@@ -13,284 +13,284 @@ Tag.destroy_all
 Tagging.destroy_all
 
 user1= User.create(username: "guest_user", password: "password",
-  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514430629/deadpool_vybajl.jpg")
+  img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1514430629/deadpool_vybajl.jpg")
 user2 = User.create(username: "james_howlett", password: "password",
-  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514430533/Wolverine_zwu94z.jpg")
+  img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1514430533/Wolverine_zwu94z.jpg")
 user3 = User.create(username: "peter_parker", password: "password",
-  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514248549/spiderman_gjgcqr.jpg")
+  img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1514248549/spiderman_gjgcqr.jpg")
 user4 = User.create(username: "bobby_drake", password: "password",
-  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514430669/Iceman-780x585_mis8bn.jpg")
+  img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1514430669/Iceman-780x585_mis8bn.jpg")
 user5 = User.create(username: "barry_allen", password: "password",
-  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514430778/the_flash_siefx3.jpg")
+  img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1514430778/the_flash_siefx3.jpg")
 user6 = User.create(username: "peter_quill", password: "password",
-  img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1514430721/peter_quill_joiard.jpg")
+  img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1514430721/peter_quill_joiard.jpg")
 
 
-photo1 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Sep_18_9_53_45_PM_ulstti.jpg",
+photo1 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Sep_18_9_53_45_PM_ulstti.jpg",
   title: "Tall Grass", owner_id: 2)
 
-photo2 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Sep_01_10_11_11_PM_g6q6gq.jpg",
+photo2 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Sep_01_10_11_11_PM_g6q6gq.jpg",
   title: "Pier Biking", owner_id: 3)
 
-photo3 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Oct_12_10_42_40_PM_lvsg8u.jpg",
+photo3 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Oct_12_10_42_40_PM_lvsg8u.jpg",
   title: "Harbor Tug Boat", owner_id: 4)
 
-photo4 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Nov_30_9_17_57_PM_hhg3cm.jpg",
+photo4 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Nov_30_9_17_57_PM_hhg3cm.jpg",
   title: "Orange Blue Lagoon", owner_id: 1)
 
-photo5 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_21_8_56_30_PM_nshqsx.jpg",
+photo5 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_21_8_56_30_PM_nshqsx.jpg",
   title: "Desert Red", owner_id: 2)
 
-photo6 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_03_8_54_07_PM_xdhp6p.jpg",
+photo6 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_03_8_54_07_PM_xdhp6p.jpg",
   title: "City Lights", owner_id: 1)
 
-photo7 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_20_9_58_10_PM_ujuoxb.jpg",
+photo7 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_20_9_58_10_PM_ujuoxb.jpg",
   title: "Dancing In The Desert", owner_id: 4)
 
-photo8 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_Nov_01_6_44_52_PM_fajhfv.jpg",
+photo8 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_Nov_01_6_44_52_PM_fajhfv.jpg",
   title: "Daily Commute", owner_id: 2)
 
-photo9 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_01_7_28_43_PM_ubgajl.jpg",
+photo9 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_01_7_28_43_PM_ubgajl.jpg",
   title: "Purple Skies", owner_id: 3)
 
-photo10 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_20_9_59_32_PM_jqtlj2.jpg",
+photo10 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_20_9_59_32_PM_jqtlj2.jpg",
   title: "Hold On To Your Hat", owner_id: 2)
 
-photo11 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_02_2_42_48_PM_c9ullm.jpg",
+photo11 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_02_2_42_48_PM_c9ullm.jpg",
   title: "Blue Glass", owner_id: 2)
 
-photo12 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_Jul_02_9_17_24_PM_frdaaf.jpg",
+photo12 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_Jul_02_9_17_24_PM_frdaaf.jpg",
   title: "Baker", owner_id: 4)
 
-photo13 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110635/Photo_Jul_09_6_20_23_PM_chcj2g.jpg",
+photo13 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110635/Photo_Jul_09_6_20_23_PM_chcj2g.jpg",
   title: "Golden Gate Traffic", owner_id: 1)
 
-photo14 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_20_10_02_29_PM_pk0lnp.jpg",
+photo14 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_20_10_02_29_PM_pk0lnp.jpg",
   title: "Rainbow Smiles", owner_id: 3)
 
-photo15 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_02_5_59_55_PM_v5p4cf.jpg",
+photo15 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_02_5_59_55_PM_v5p4cf.jpg",
   title: "Empire State of Mind", owner_id: 2)
 
-photo16 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_Jul_20_10_11_56_PM_q1vpt2.jpg",
+photo16 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_Jul_20_10_11_56_PM_q1vpt2.jpg",
   title: "Tall Grass Sunset", owner_id: 1)
 
-photo17 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_Jun_11_10_17_32_PM_ew1iny.jpg",
+photo17 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_Jun_11_10_17_32_PM_ew1iny.jpg",
   title: "Surfs Up", owner_id: 3)
 
-photo18 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_May_03_6_03_52_PM_ym2cor.jpg",
+photo18 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_May_03_6_03_52_PM_ym2cor.jpg",
   title: "Blue Moon", owner_id: 1)
 
-photo19 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_20_10_11_27_PM_ukegvz.jpg",
+photo19 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_20_10_11_27_PM_ukegvz.jpg",
   title: "Welcome Home", owner_id: 5)
 
-photo20 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_02_6_03_08_PM_kvfumn.jpg",
+photo20 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_02_6_03_08_PM_kvfumn.jpg",
   title: "New York Skyline", owner_id: 4)
 
-photo21 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_21_8_30_02_PM_ertb56.jpg",
+photo21 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110638/Photo_Nov_21_8_30_02_PM_ertb56.jpg",
   title: "Desert Unicorn", owner_id: 1)
 
-photo22 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_Jul_20_10_16_07_PM_pir4e9.jpg",
+photo22 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110636/Photo_Jul_20_10_16_07_PM_pir4e9.jpg",
   title: "White Dress", owner_id: 5)
 
-photo23 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_03_4_13_33_PM_zc3rxd.jpg",
+photo23 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_03_4_13_33_PM_zc3rxd.jpg",
   title: "The Bridge", owner_id: 6)
 
-photo24 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_15_4_23_26_PM_whmzlf.jpg",
+photo24 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_15_4_23_26_PM_whmzlf.jpg",
   title: "Couple Goals", owner_id: 3)
 
-photo25 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110635/Photo_Jan_07_3_23_50_AM_ytjntu.jpg",
+photo25 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110635/Photo_Jan_07_3_23_50_AM_ytjntu.jpg",
   title: "Dog Walkin", owner_id: 2)
 
-photo26 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_15_4_36_59_PM_ylelm0.jpg",
+photo26 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_15_4_36_59_PM_ylelm0.jpg",
   title: "Loner", owner_id: 1)
 
-photo27 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110635/Photo_Dec_04_9_21_14_PM_yrklgc.jpg",
+photo27 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110635/Photo_Dec_04_9_21_14_PM_yrklgc.jpg",
   title: "Peter Pan", owner_id: 4)
 
-photo28 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110635/Photo_Aug_15_4_41_45_PM_ijbtpb.jpg",
+photo28 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110635/Photo_Aug_15_4_41_45_PM_ijbtpb.jpg",
   title: "Skate or Die", owner_id: 5)
 
-photo29 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109877/Photo_Sep_03_3_43_16_PM_knwudu.jpg",
+photo29 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109877/Photo_Sep_03_3_43_16_PM_knwudu.jpg",
   title: "Sail Boat", owner_id: 5)
 
-photo30 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_14_4_52_06_PM_odhh8p.jpg",
+photo30 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_14_4_52_06_PM_odhh8p.jpg",
   title: "Rainbow Waterfall", owner_id: 1)
 
-photo31 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_14_2_31_57_AM_pd9w9k.jpg",
+photo31 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_14_2_31_57_AM_pd9w9k.jpg",
   title: "Starry Night", owner_id: 2)
 
-photo32 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_08_3_35_20_PM_cpmkxu.jpg",
+photo32 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_08_3_35_20_PM_cpmkxu.jpg",
   title: "Crystal Ball", owner_id: 3)
 
-photo33 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109878/Photo_Sep_03_3_53_35_PM_ialcqx.jpg",
+photo33 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109878/Photo_Sep_03_3_53_35_PM_ialcqx.jpg",
   title: "Golden Gate Lean", owner_id: 5)
 
-photo34 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_12_4_55_52_PM_friymw.jpg",
+photo34 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110634/Photo_Aug_12_4_55_52_PM_friymw.jpg",
   title: "Refill Please", owner_id: 4)
 
-photo35 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_Nov_21_8_26_54_PM_xfwtfi.jpg",
+photo35 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_Nov_21_8_26_54_PM_xfwtfi.jpg",
   title: "Black Dress", owner_id: 6)
 
-photo36 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109877/Photo_Sep_03_3_08_58_PM_s3qytn.jpg",
+photo36 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109877/Photo_Sep_03_3_08_58_PM_s3qytn.jpg",
   title: "Navigating The Rocks", owner_id: 1)
 
-photo37 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109877/Photo_Sep_03_2_29_49_PM_qy4trm.jpg",
+photo37 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109877/Photo_Sep_03_2_29_49_PM_qy4trm.jpg",
   title: "Bridge To Nowhere", owner_id: 5)
 
-photo38 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109877/Photo_Sep_03_3_20_32_PM_fyusch.jpg",
+photo38 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109877/Photo_Sep_03_3_20_32_PM_fyusch.jpg",
   title: "Flying V", owner_id: 3)
 
-photo39 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_May_20_8_55_20_PM_zqvep0.jpg",
+photo39 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_May_20_8_55_20_PM_zqvep0.jpg",
   title: "Blue Eyes", owner_id: 2)
 
-photo40 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_11_9_23_49_PM_tkjreu.jpg",
+photo40 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_11_9_23_49_PM_tkjreu.jpg",
   title: "Volleyball Sunset", owner_id: 4)
 
-photo41 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_May_12_5_08_51_PM_cjsscz.jpg",
+photo41 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_May_12_5_08_51_PM_cjsscz.jpg",
   title: "Red Square", owner_id: 1)
 
-photo42 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_11_9_11_55_PM_nadmel.jpg",
+photo42 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_11_9_11_55_PM_nadmel.jpg",
   title: "Sandy Hands", owner_id: 5)
 
-photo43 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_May_11_9_36_28_PM_m0te27.jpg",
+photo43 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_May_11_9_36_28_PM_m0te27.jpg",
   title: "Orange Sunset", owner_id: 6)
 
-photo44 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_May_12_4_57_20_PM_xorfzw.jpg",
+photo44 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_May_12_4_57_20_PM_xorfzw.jpg",
   title: "Deserted Lineup", owner_id: 2)
 
-photo45 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109877/Photo_Sep_03_2_46_29_PM_ti0myx.jpg",
+photo45 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109877/Photo_Sep_03_2_46_29_PM_ti0myx.jpg",
   title: "Pinstripe Pajamas", owner_id: 1)
 
-photo46 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_11_9_06_52_PM_hboq8i.jpg",
+photo46 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_11_9_06_52_PM_hboq8i.jpg",
   title: "Whitewash Closeup", owner_id: 3)
 
-photo47 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_May_12_5_02_34_PM_fjsf3m.jpg",
+photo47 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109876/Photo_May_12_5_02_34_PM_fjsf3m.jpg",
   title: "Split Peak", owner_id: 6)
 
-photo48 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_May_03_6_20_58_PM_wvk8uh.jpg",
+photo48 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_May_03_6_20_58_PM_wvk8uh.jpg",
   title: "Smile Like You Mean It", owner_id: 5)
 
-photo49 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_03_7_16_28_PM_xqtay4.jpg",
+photo49 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_03_7_16_28_PM_xqtay4.jpg",
   title: "Snow Skippin", owner_id: 4)
 
-photo50 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_11_8_51_45_PM_fplffs.jpg",
+photo50 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_11_8_51_45_PM_fplffs.jpg",
   title: "Pier Shenanigans", owner_id: 2)
 
-photo51 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_Mar_25_12_42_52_PM_djm3fc.jpg",
+photo51 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_Mar_25_12_42_52_PM_djm3fc.jpg",
   title: "Road To Mammoth", owner_id: 5)
 
-photo52 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/a_90/v1512109874/Photo_Mar_20_4_49_27_PM_rmh0kg.jpg",
+photo52 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/a_90/v1512109874/Photo_Mar_20_4_49_27_PM_rmh0kg.jpg",
   title: "Castle Pool", owner_id: 6)
 
-photo53 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_03_6_24_19_PM_p4cdnx.jpg",
+photo53 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_03_6_24_19_PM_p4cdnx.jpg",
   title: "Canon Glasses", owner_id: 3)
 
-photo54 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_May_02_6_49_37_PM_lbyqcg.jpg",
+photo54 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_May_02_6_49_37_PM_lbyqcg.jpg",
   title: "Ruby's Diner", owner_id: 5)
 
-photo55 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_20_4_30_22_PM_h9atuo.jpg",
+photo55 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_20_4_30_22_PM_h9atuo.jpg",
   title: "Balancing Act", owner_id: 5)
 
-photo56 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_14_8_47_46_PM_ano93q.jpg",
+photo56 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_14_8_47_46_PM_ano93q.jpg",
   title: "Flying Solo", owner_id: 1)
 
-photo57 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/q_80/a_270/v1512109874/Photo_Mar_20_4_56_16_PM_dc16au.jpg",
+photo57 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/q_80/a_270/v1512109874/Photo_Mar_20_4_56_16_PM_dc16au.jpg",
   title: "Rocky Point", owner_id: 6)
 
-photo58 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_18_4_22_58_PM_gunjid.jpg",
+photo58 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_18_4_22_58_PM_gunjid.jpg",
   title: "Best Friends", owner_id: 4)
 
-photo59 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_31_10_56_52_AM_z4awoa.jpg",
+photo59 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_31_10_56_52_AM_z4awoa.jpg",
   title: "Light Festival", owner_id: 3)
 
-photo60 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Jul_15_6_58_35_PM_hvflno.jpg",
+photo60 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Jul_15_6_58_35_PM_hvflno.jpg",
   title: "Cabin In The Woods", owner_id: 1)
 
-photo61 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_14_8_46_44_PM_gvjccg.jpg",
+photo61 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_14_8_46_44_PM_gvjccg.jpg",
   title: "Orange Reflection", owner_id: 2)
 
-photo62 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_Mar_20_4_53_07_PM_go4a8t.jpg",
+photo62 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_Mar_20_4_53_07_PM_go4a8t.jpg",
   title: "Lighthouse Castle", owner_id: 5)
 
-photo63 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_30_12_37_35_AM_iau70c.jpg",
+photo63 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_30_12_37_35_AM_iau70c.jpg",
   title: "Put Em Up", owner_id: 6)
 
-photo64 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_30_6_19_17_AM_pc4uuo.jpg",
+photo64 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_30_6_19_17_AM_pc4uuo.jpg",
   title: "Bangkok Skyline", owner_id: 1)
 
-photo65 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_02_8_00_48_PM_spzx56.jpg",
+photo65 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_02_8_00_48_PM_spzx56.jpg",
   title: "Too Cool For School", owner_id: 5)
 
-photo66 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_25_4_54_46_PM_tnucns.jpg",
+photo66 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_25_4_54_46_PM_tnucns.jpg",
   title: "Split Down The Middle", owner_id: 5)
 
-photo67 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_28_3_33_53_AM_kd0nx7.jpg",
+photo67 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_28_3_33_53_AM_kd0nx7.jpg",
   title: "Monkey Business", owner_id: 3)
 
-photo68 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_25_4_24_12_PM_t9ec69.jpg",
+photo68 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_25_4_24_12_PM_t9ec69.jpg",
   title: "Winter Wonderland", owner_id: 2)
 
-photo69 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_29_11_52_38_PM_by7h45.jpg",
+photo69 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_29_11_52_38_PM_by7h45.jpg",
   title: "Jungle Fever", owner_id: 5)
 
-photo70 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_02_9_05_30_PM_vrkbp6.jpg",
+photo70 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_02_9_05_30_PM_vrkbp6.jpg",
   title: "Sunset Eyes", owner_id: 4)
 
-# photo71 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_13_12_46_52_PM_qapi7z.jpg",
+# photo71 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_13_12_46_52_PM_qapi7z.jpg",
 #   title: "Flannel Bridge", owner_id: 1)
 #
-# photo72 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_24_5_03_54_PM_vsecoy.jpg",
+# photo72 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_24_5_03_54_PM_vsecoy.jpg",
 #   title: "Jetty Waves", owner_id: 6)
 #
-# photo73 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_12_7_28_56_PM_dmm1jv.jpg",
+# photo73 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_12_7_28_56_PM_dmm1jv.jpg",
 #   title: "White Sky Pier", owner_id: 3)
 #
-# photo74 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_13_12_41_28_PM_im70mo.jpg",
+# photo74 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_13_12_41_28_PM_im70mo.jpg",
 #   title: "Ocean View", owner_id: 5)
 #
-# photo75 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_12_7_04_39_PM_y4eox5.jpg",
+# photo75 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_12_7_04_39_PM_y4eox5.jpg",
 #   title: "Cape Coastline", owner_id: 2)
 #
-# photo76 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_03_5_00_45_AM_wdysjw.jpg",
+# photo76 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_03_5_00_45_AM_wdysjw.jpg",
 #   title: "Watchu Lookin At", owner_id: 5)
 #
-# photo77 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_13_1_40_29_PM_ujtrlt.jpg",
+# photo77 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109871/Photo_Feb_13_1_40_29_PM_ujtrlt.jpg",
 #   title: "Hairy Face", owner_id: 6)
 #
-# photo78 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_01_5_04_37_AM_joihtl.jpg",
+# photo78 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Feb_01_5_04_37_AM_joihtl.jpg",
 #   title: "Jungle Cruisin", owner_id: 1)
 #
-# photo79 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Dec_26_9_25_00_PM_azhbgh.jpg",
+# photo79 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Dec_26_9_25_00_PM_azhbgh.jpg",
 #   title: "First Date", owner_id: 4)
 #
-# photo80 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_13_1_28_15_PM_a3rhvf.jpg",
+# photo80 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109870/Photo_Feb_13_1_28_15_PM_a3rhvf.jpg",
 #   title: "Blurry Coastline", owner_id: 2)
 #
-# photo81 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Dec_11_1_35_47_PM_ki5rsa.jpg",
+# photo81 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109869/Photo_Dec_11_1_35_47_PM_ki5rsa.jpg",
 #   title: "Can't Feel My Face", owner_id: 3)
 #
-# photo82 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109868/Photo_Dec_04_9_22_14_PM_vnynkr.jpg",
+# photo82 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109868/Photo_Dec_04_9_22_14_PM_vnynkr.jpg",
 #   title: "Sandy Toes", owner_id: 5)
 #
-# photo83 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109868/Photo_Apr_27_9_08_39_PM_xywrbb.jpg",
+# photo83 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109868/Photo_Apr_27_9_08_39_PM_xywrbb.jpg",
 #   title: "Muddy Shoes", owner_id: 6)
 #
-# photo84 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_27_6_14_03_PM_wjw0sb.jpg",
+# photo84 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_27_6_14_03_PM_wjw0sb.jpg",
 #   title: "Film Cameras", owner_id: 1)
 #
-# photo85 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_27_5_06_02_PM_zg2ycl.jpg",
+# photo85 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_27_5_06_02_PM_zg2ycl.jpg",
 #   title: "Foggy Days", owner_id: 2)
 #
-# photo86 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_24_1_03_38_PM_yf6aat.jpg",
+# photo86 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_24_1_03_38_PM_yf6aat.jpg",
 #   title: "Blue Mountains", owner_id: 3)
 #
-# photo87 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_22_3_35_25_PM_ukcxjq.jpg",
+# photo87 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_22_3_35_25_PM_ukcxjq.jpg",
 #   title: "Final Destination", owner_id: 1)
 #
-# photo88 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_22_3_36_22_PM_kyawl2.jpg",
+# photo88 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109867/Photo_Apr_22_3_36_22_PM_kyawl2.jpg",
 #   title: "Pitch Fork Portrait", owner_id: 5)
 #
-# photo89 = Photo.create(img_url: "http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Sep_28_10_55_27_PM_dp8wyj.jpg",
+# photo89 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110639/Photo_Sep_28_10_55_27_PM_dp8wyj.jpg",
 #   title: "Blue Palm Trees", owner_id: 4)
 
 
@@ -460,7 +460,7 @@ tagging70 = Tagging.create(photo_id: photo70.id, tag_id: tag2.id)
 # tagging79 = Tagging.create(photo_id: photo79.id, tag_id: tag3.id)
 #
 # tagging80 = Tagging.create(photo_id: photo80.id, tag_id: tag3.id)
-# 
+#
 # tagging81 = Tagging.create(photo_id: photo81.id, tag_id: tag2.id)
 #
 # tagging82 = Tagging.create(photo_id: photo82.id, tag_id: tag2.id)
