@@ -20,35 +20,36 @@
 
 .photo-show-div img {
   width: auto;
-  max-height: 600px;
+  max-height: 400px;
 }
 
-//////////////////////////////////////////////////////////////////
-// Might need to style the actual image and not just the modal
+@media only screen and (min-width: 1100px) and (min-height: 600px) {
+  .photo-show-div img {
+    width: auto;
+    max-height: 450px;
+  }
+}
 
-// .modal-photo-show {
-//   position: absolute;
-//   width: 870px;
-//   height: 670px;
-//   top: 50%;
-//   left: 50%;
-//   -webkit-transform: translate(-50%, -50%);
-//   border-radius: 2px;
-//   padding: 10px;
-//   background: white;
-//   display: flex;
-// }
+@media only screen and (min-width: 1300px) and (min-height: 750px) {
+  .photo-show-div img {
+    width: auto;
+    max-height: 600px;
+  }
+}
 
-// .photo-show-div {
-//   position: absolute;
-//   width: 432px;
-//   height: 650px;
-//   top: 50%;
-//   left: 26%;
-//   -webkit-transform: translate(-50%, -50%);
-//   align-items: center;
-// }
+@media only screen and (min-width: 1400px) and (min-height: 800px) {
+  .photo-show-div img {
+    width: auto;
+    max-height: 650px;
+  }
+}
 
+@media only screen and (min-width: 1600px) and (min-height: 900px) {
+  .photo-show-div img {
+    width: auto;
+    max-height: 750px;
+  }
+}
 
 .ReactModal__Body--open {
   overflow: hidden;
@@ -91,8 +92,8 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  top: 2.5%;
-  left: 97.8%;
+  top: 2%;
+  left: 98.6%;
   -webkit-transform: translate(-50%, -50%);
   color: gray;
 }

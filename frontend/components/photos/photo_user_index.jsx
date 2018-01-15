@@ -7,10 +7,14 @@ class PhotoUserIndex extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-  if (this.props.match.params.userId !== newProps.match.params.userId) {
-    this.props.requestUserPhotos(newProps.match.params.userId);
+    if (this.props.match.params.userId !== newProps.match.params.userId) {
+      this.props.requestUserPhotos(newProps.match.params.userId);
+    }
   }
-}
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
   render () {
     const { photos } = this.props;

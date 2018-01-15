@@ -15,15 +15,5 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     resources :comments, only:[:index, :create, :update, :destroy, :show]
     resource :like, only:[:create, :destroy]
-
-    # resources :users do
-    #   resources :photos, only: [:index]
-    # end
-    # resources :photos do
-    #   resources :comments, only: [:index]
-    # end
-    # resources :tags do
-    #   resources :photos, only: [:index]
-    # end
   end
 end
