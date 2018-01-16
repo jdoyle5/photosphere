@@ -123,7 +123,7 @@ class SessionForm extends React.Component {
             <input type="submit" value="Submit" />
         </form>
         {this.navLink()}
-        <a onClick={this.loginGuest}>Use guest login. <b>Guest</b></a>
+        <a className="guest-login" onClick={this.loginGuest}>Login as <b>Guest</b></a>
       </div>
     );
   }
