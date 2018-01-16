@@ -57,10 +57,9 @@ class PhotoIndexItem extends React.Component {
           >
           <PhotoShowContainer photo={photo} modalClose={this.modalClose}/>
 
-          <button className="close-modal-x">
-          <i className="fa fa-times"
-          onClick={ this.modalClose }
-          aria-hidden="true"></i></button>
+          <button onClick={ this.modalClose }
+                  className="close-modal-x fa fa-times">
+          </button>
 
         </Modal>
       </div>

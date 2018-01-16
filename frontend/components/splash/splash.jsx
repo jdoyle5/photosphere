@@ -33,9 +33,9 @@ class Splash extends React.Component {
 
   handleGuestLogin() {
     this.setState({
-      modalIsOpen: true,
+      modalOn: true,
       formChosen: "Log In",
-      demoLogin: true
+      guestLogin: true
     });
   }
 
@@ -72,13 +72,9 @@ class Splash extends React.Component {
 
         <div className="guest-div">
           <h1>Share your photos with the world.</h1>
-        {/* <button onClick={() => this.props.login({
-            username: "guest_user",
-            password: "password"
-          })}> */}
-        <button onClick={this.handleGuestLogin}>
-          Guest
-        </button>
+          <button onClick={this.handleGuestLogin}>
+            Guest
+          </button>
         </div>
       </div>
     );
@@ -92,8 +88,4 @@ export default Splash;
 
 
 
-
-
-
-
-//////////
+////////////

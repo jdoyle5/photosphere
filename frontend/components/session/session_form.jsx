@@ -12,6 +12,15 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.navLink = this.navLink.bind(this);
     this.toggleForm = this.toggleForm.bind(this);
+    this.loginGuest = this.loginGuest.bind(this);
+    // this.handleGuestLogin = this.handleGuestLogin.bind(this);
+
+    if (props.guestLogin) {
+      this.loginGuest();
+    } else if (this.state.formGuestLogin) {
+      this.loginGuest();
+    }
+
   }
 
   handleInput(type) {
@@ -70,6 +79,27 @@ class SessionForm extends React.Component {
     }
   }
 
+
+  loginGuest() {
+    const guestUsername = 'guest_user'.split('');
+    const guestPassword = 'password'.split('');
+
+    const intervalMain = setInterval(() => {
+      if (guestUsername.length > 0) {
+        this.setState({
+          username: this.state.username + guestUsername.shift()
+        });
+      } else if (guestPassword.length > 0) {
+        this.setState({
+          password: this.state.password + guestPassword.shift()
+        });
+      } else {
+        clearInterval(intervalMain);
+        this.props.login(this.state);
+      }
+    }, 100);
+  }
+
   render() {
     return (
       <div className="session-form-container">
@@ -93,6 +123,7 @@ class SessionForm extends React.Component {
             <input type="submit" value="Submit" />
         </form>
         {this.navLink()}
+        <a onClick={this.loginGuest}>Use guest login. <b>Guest</b></a>
       </div>
     );
   }
