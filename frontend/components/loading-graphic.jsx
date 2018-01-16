@@ -1,36 +1,38 @@
 import React from 'react';
 
 const LoadingGraphic = () => (
-  <div class="cssload-wrap">
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
-  	<div class="cssload-circle"></div>
+  <div className="cssload-wrap">
+  	<div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+  	<div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+  	<div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+  	<div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+  	<div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+  	<div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+  	<div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+  	<div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+  	<div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+  	<div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
+    <div className="cssload-circle"></div>
   </div>
 );
+
+export default LoadingGraphic;

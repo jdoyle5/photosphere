@@ -110,6 +110,7 @@
 .comment-owner-body {
   display: flex;
   flex-direction: row;
+  width: 300px;
 
   a {
     margin-right: 6px;
@@ -177,13 +178,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 230px;
+  width: 210px;
 
   span {
     margin-right: 5px;
   }
 
   p {
-    max-width: 230px;
+    max-width: 180px;
   }
 }

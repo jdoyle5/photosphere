@@ -5,7 +5,8 @@ import { requestTags } from '../../actions/tag.js';
 import PhotoIndex from './photo_index';
 
 const mapStateToProps = state => ({
-  photos: selectPhotos(state)
+  photos: selectPhotos(state),
+  loading: state.ui.loading
 });
 
 const mapDispatchToProps = dispatch => ({

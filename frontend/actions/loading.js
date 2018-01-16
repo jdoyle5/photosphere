@@ -1,5 +1,5 @@
 export const BEGIN_LOADING = "BEGIN_LOADING";
 
-export const startLoading = () => ({
+export const beginLoading = () => ({
   type: BEGIN_LOADING
 });
