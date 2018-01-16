@@ -1,7 +1,6 @@
 import React from 'react';
 import { AuthRoute } from '../../util/route_util';
 import Modal from 'react-modal';
-// import { Image } from 'cloudinary-react';
 import SessionFormContainer from '../session/session_form_container';
 
 class Splash extends React.Component {
@@ -9,10 +8,12 @@ class Splash extends React.Component {
     super(props);
     this.state = {
       modalOn: false,
-      formChosen: ""
+      formChosen: "",
+      guestLogin: false
     };
     this.modalClose = this.modalClose.bind(this);
     this.modalOpen = this.modalOpen.bind(this);
+    this.handleGuestLogin = this.handleGuestLogin.bind(this);
   }
 
   modalOpen(formChosen) {
@@ -28,6 +29,14 @@ class Splash extends React.Component {
       formChosen: ""
     });
     this.props.clearErrors();
+  }
+
+  handleGuestLogin() {
+    this.setState({
+      modalIsOpen: true,
+      formChosen: "Log In",
+      demoLogin: true
+    });
   }
 
   render () {
@@ -57,15 +66,17 @@ class Splash extends React.Component {
 
           <SessionFormContainer
             formChosen={ this.state.formChosen }
+            guestLogin={this.state.guestLogin}
           />
         </Modal>
 
         <div className="guest-div">
-          <h1>Dare to explore.</h1>
-        <button onClick={() => this.props.login({
+          <h1>Share your photos with the world.</h1>
+        {/* <button onClick={() => this.props.login({
             username: "guest_user",
             password: "password"
-          })}>
+          })}> */}
+        <button onClick={this.handleGuestLogin}>
           Guest
         </button>
         </div>
