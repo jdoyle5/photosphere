@@ -4,7 +4,8 @@ import { selectPhotos } from '../../reducers/selectors';
 import { requestTagPhotos } from '../../actions/photo.js';
 
 const mapStateToProps = state => ({
-  photos: selectPhotos(state)
+  photos: selectPhotos(state),
+  loading: state.ui.loading
 });
 
 const mapDispatchToProps = dispatch => ({

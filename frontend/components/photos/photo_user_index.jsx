@@ -1,5 +1,7 @@
 import React from 'react';
 import PhotoUserIndexItem from './photo_user_index_item';
+import LoadingGraphic from '../loading-graphic';
+
 
 class PhotoUserIndex extends React.Component {
   componentWillMount() {
@@ -17,18 +19,24 @@ class PhotoUserIndex extends React.Component {
   }
 
   render () {
-    const { photos } = this.props;
+    const { photos, loading } = this.props;
 
-    return (
-      <div className="index-photo-display">
-        <h2 className="user-activity">User Activity</h2>
-        <div className="index-sub-display">
-          {photos.map( photo =>
-            <PhotoUserIndexItem key={photo.id} photo={photo}/>
-          )}
+    if (loading) {
+      return (
+        <LoadingGraphic />
+      );
+    } else {
+      return (
+        <div className="index-photo-display">
+          <h2 className="user-activity">User Activity</h2>
+          <div className="index-sub-display">
+            {photos.map( photo =>
+              <PhotoUserIndexItem key={photo.id} photo={photo}/>
+            )}
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 }
 
