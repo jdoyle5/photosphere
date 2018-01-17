@@ -496,17 +496,19 @@ tag8 = Tag.create(name: "cool"),
 end
 
 
-rand_comments = ["This is ridiculous! Great job with the colors.",
+rand_comments = ["This is ridiculous!",
+  "Great job!",
+  "Love the colors.",
   "Wooo amazing!",
   "Love this one",
   "Super cool!",
-  "I really like this one a lot",
-  "This makes me want to travel!",
+  "Crazy shot!",
+  "I love traveling!",
   "So dope!",
   "Where is this??",
   "Wow I'm so jealous",
   "So awesome!",
-  "What kind of camera do you use?",
+  "What lens is this?",
   "I love the crop!"]
 
 
