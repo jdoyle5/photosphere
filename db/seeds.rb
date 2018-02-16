@@ -175,36 +175,36 @@ photo49 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/uplo
 
 photo50 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_11_8_51_45_PM_fplffs.jpg",
   title: "Pier Shenanigans", owner_id: 2)
-#
-# photo51 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_Mar_25_12_42_52_PM_djm3fc.jpg",
-#   title: "Road To Mammoth", owner_id: 5)
-#
-# photo52 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/a_90/v1512109874/Photo_Mar_20_4_49_27_PM_rmh0kg.jpg",
-#   title: "Castle Pool", owner_id: 6)
-#
-# photo53 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_03_6_24_19_PM_p4cdnx.jpg",
-#   title: "Canon Glasses", owner_id: 3)
-#
-# photo54 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_May_02_6_49_37_PM_lbyqcg.jpg",
-#   title: "Ruby's Diner", owner_id: 5)
-#
-# photo55 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_20_4_30_22_PM_h9atuo.jpg",
-#   title: "Balancing Act", owner_id: 5)
-#
-# photo56 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_14_8_47_46_PM_ano93q.jpg",
-#   title: "Flying Solo", owner_id: 1)
-#
-# photo57 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/q_80/a_270/v1512109874/Photo_Mar_20_4_56_16_PM_dc16au.jpg",
-#   title: "Rocky Point", owner_id: 6)
-#
-# photo58 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_18_4_22_58_PM_gunjid.jpg",
-#   title: "Best Friends", owner_id: 4)
-#
-# photo59 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_31_10_56_52_AM_z4awoa.jpg",
-#   title: "Light Festival", owner_id: 3)
-#
-# photo60 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Jul_15_6_58_35_PM_hvflno.jpg",
-#   title: "Cabin In The Woods", owner_id: 1)
+
+photo51 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_Mar_25_12_42_52_PM_djm3fc.jpg",
+  title: "Road To Mammoth", owner_id: 5)
+
+photo52 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/a_90/v1512109874/Photo_Mar_20_4_49_27_PM_rmh0kg.jpg",
+  title: "Castle Pool", owner_id: 6)
+
+photo53 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109875/Photo_May_03_6_24_19_PM_p4cdnx.jpg",
+  title: "Canon Glasses", owner_id: 3)
+
+photo54 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109874/Photo_May_02_6_49_37_PM_lbyqcg.jpg",
+  title: "Ruby's Diner", owner_id: 5)
+
+photo55 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_20_4_30_22_PM_h9atuo.jpg",
+  title: "Balancing Act", owner_id: 5)
+
+photo56 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_14_8_47_46_PM_ano93q.jpg",
+  title: "Flying Solo", owner_id: 1)
+
+photo57 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/q_80/a_270/v1512109874/Photo_Mar_20_4_56_16_PM_dc16au.jpg",
+  title: "Rocky Point", owner_id: 6)
+
+photo58 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_18_4_22_58_PM_gunjid.jpg",
+  title: "Best Friends", owner_id: 4)
+
+photo59 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109872/Photo_Jan_31_10_56_52_AM_z4awoa.jpg",
+  title: "Light Festival", owner_id: 3)
+
+photo60 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Jul_15_6_58_35_PM_hvflno.jpg",
+  title: "Cabin In The Woods", owner_id: 1)
 #
 # photo61 = Photo.create(img_url: "https://res.cloudinary.com/dn7nwtnr4/image/upload/v1512109873/Photo_Mar_14_8_46_44_PM_gvjccg.jpg",
 #   title: "Orange Reflection", owner_id: 2)
@@ -401,25 +401,25 @@ tagging49 = Tagging.create(photo_id: photo49.id, tag_id: tag3.id)
 
 tagging50 = Tagging.create(photo_id: photo50.id, tag_id: tag2.id)
 
-# tagging51 = Tagging.create(photo_id: photo51.id, tag_id: tag3.id)
-#
-# tagging52 = Tagging.create(photo_id: photo52.id, tag_id: tag1.id)
-#
-# tagging53 = Tagging.create(photo_id: photo53.id, tag_id: tag2.id)
-# 
-# tagging54 = Tagging.create(photo_id: photo54.id, tag_id: tag1.id)
-#
-# tagging55 = Tagging.create(photo_id: photo55.id, tag_id: tag2.id)
-#
-# tagging56 = Tagging.create(photo_id: photo56.id, tag_id: tag3.id)
-#
-# tagging57 = Tagging.create(photo_id: photo57.id, tag_id: tag1.id)
-#
-# tagging58 = Tagging.create(photo_id: photo58.id, tag_id: tag2.id)
-#
-# tagging59 = Tagging.create(photo_id: photo59.id, tag_id: tag2.id)
-#
-# tagging60 = Tagging.create(photo_id: photo60.id, tag_id: tag1.id)
+tagging51 = Tagging.create(photo_id: photo51.id, tag_id: tag3.id)
+
+tagging52 = Tagging.create(photo_id: photo52.id, tag_id: tag1.id)
+
+tagging53 = Tagging.create(photo_id: photo53.id, tag_id: tag2.id)
+
+tagging54 = Tagging.create(photo_id: photo54.id, tag_id: tag1.id)
+
+tagging55 = Tagging.create(photo_id: photo55.id, tag_id: tag2.id)
+
+tagging56 = Tagging.create(photo_id: photo56.id, tag_id: tag3.id)
+
+tagging57 = Tagging.create(photo_id: photo57.id, tag_id: tag1.id)
+
+tagging58 = Tagging.create(photo_id: photo58.id, tag_id: tag2.id)
+
+tagging59 = Tagging.create(photo_id: photo59.id, tag_id: tag2.id)
+
+tagging60 = Tagging.create(photo_id: photo60.id, tag_id: tag1.id)
 #
 # tagging61 = Tagging.create(photo_id: photo61.id, tag_id: tag3.id)
 #
