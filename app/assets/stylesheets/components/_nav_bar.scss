@@ -58,6 +58,17 @@
    z-index: 9999;
 }
 
+.link-username-activity {
+   color: black;
+   font-size: 24px;
+   letter-spacing: 0.5px;
+   opacity: 0.6;
+   text-transform: uppercase;
+   padding: 5px;
+   font-family: 'Barlow Semi Condensed';
+   z-index: 9999;
+}
+
 .navbar-user {
   display: flex;
   flex-direction: row;
@@ -87,6 +98,38 @@
   a {
     width: 40px;
     height: 40px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%; // This creates a circular crop on the photo
+  }
+}
+
+.navbar-photo-activity {
+  width: 70px;
+  display: block;
+  -webkit-box-flex: 0;
+  flex: none;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+
+  img {
+    height: 100%;
+    width: auto;
+    margin-left: -5%; // This will help center the photo
+  }
+
+  a {
+    width: 70px;
+    height: 70px;
     background-color: #fafafa;
     box-sizing: border-box;
     cursor: pointer;

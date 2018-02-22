@@ -1,6 +1,7 @@
 import React from 'react';
 import PhotoUserIndexItem from './photo_user_index_item';
 import LoadingGraphic from '../loading-graphic';
+import { Link } from 'react-router-dom';
 
 
 class PhotoUserIndex extends React.Component {
@@ -20,7 +21,7 @@ class PhotoUserIndex extends React.Component {
 
   render () {
     const { photos, loading } = this.props;
-
+    const currentUser = this.props.currentUser;
     if (loading) {
       return (
         <LoadingGraphic />
@@ -28,7 +29,15 @@ class PhotoUserIndex extends React.Component {
     } else {
       return (
         <div className="index-photo-display">
-          <h2 className="user-activity">User Activity</h2>
+          <div className="navbar-user">
+            <div className="navbar-photo-activity">
+              <Link to={`/users/${currentUser.id}/photos`}><img src={ currentUser.img_url }/></Link>
+            </div>
+            <div className="navbar-username">
+              <Link to={`/users/${currentUser.id}/photos`} className="link-username-activity">{currentUser.username}</Link>
+            </div>
+          </div>
+          <h2 className="user-activity">Activity</h2>
           <div className="index-sub-display">
             {photos.map( photo =>
               <PhotoUserIndexItem key={photo.id} photo={photo}/>

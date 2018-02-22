@@ -5,7 +5,8 @@ import { requestUserPhotos } from '../../actions/photo.js';
 
 const mapStateToProps = state => ({
   photos: selectPhotos(state),
-  loading: state.ui.loading
+  loading: state.ui.loading,
+  currentUser: state.session.currentUser
 });
 
 const mapDispatchToProps = dispatch => ({
