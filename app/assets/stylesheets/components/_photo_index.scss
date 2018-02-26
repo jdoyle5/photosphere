@@ -1,6 +1,6 @@
 .index-photo-display {
-  display: flex;
-  flex-flow: column;
+  display: -webkit-flex;
+  -webkit-flex-flow: column;
   align-items: center;
   margin: 30px;
   margin-top: 80px;
@@ -8,13 +8,13 @@
 
 .index-sub-display {
   position: relative;
-  column-count: 1;
+  -webkit-column-count: 1;
   column-gap: 1em;
   width: 100%;
   margin-top: 25px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (-webkit-min-width: 600px) {
   .index-sub-display {
     column-count: 2;
     -moz-column-count: 2;
@@ -22,7 +22,7 @@
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (-webkit-min-width: 1000px) {
   .index-sub-display {
     column-count: 3;
     -moz-column-count: 3;
@@ -30,7 +30,7 @@
   }
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (-webkit-min-width: 1500px) {
   .index-sub-display {
     column-count: 4;
     -moz-column-count: 4;
@@ -77,8 +77,8 @@
 }
 
 .username-display {
-  display: flex;
-  flex-direction: row;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
   font-family: 'Barlow Semi Condensed';
   padding: 5px;
   visibility: hidden;
@@ -149,20 +149,20 @@
   a {
     width: 30px;
     height: 30px;
-    background-color: #fafafa;
-    box-sizing: border-box;
+    // background-color: #fafafa;
+    -webkit-box-sizing: border-box;
     display: block;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
     overflow: hidden;
     position: relative;
   }
 }
 
 .photo-index-username {
-  display: flex;
-  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
   align-items: center;
   padding-top: 9px;
 }
