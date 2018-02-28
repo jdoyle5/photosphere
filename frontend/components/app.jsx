@@ -17,6 +17,7 @@ import PhotoIndexContainer from './photos/photo_index_container';
 import PhotoUserIndexContainer from './photos/photo_user_index_container';
 import PhotoTagIndexContainer from './photos/photo_tag_index_container';
 import PhotoFormContainer from './photos/photo_form_container';
+import UserInfoContainer from './photos/user_info_container';
 
 
 const App = () => (
@@ -26,6 +27,7 @@ const App = () => (
       <Switch>
         <AuthRoute exact path="/" component={SplashContainer} />
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
+        <ProtectedRoute path="/users/:userId/photos" component={UserInfoContainer} />
         <ProtectedRoute path="/users/:userId/photos" component={PhotoUserIndexContainer} />
         <ProtectedRoute path="/tags/:tagId/photos" component={PhotoTagIndexContainer} />
         <ProtectedRoute path="/upload" component={PhotoFormContainer} />
