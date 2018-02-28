@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import LoadingGraphic from '../loading-graphic';
 
 class UserInfo extends React.Component {
   constructor(props) {
@@ -18,12 +19,20 @@ class UserInfo extends React.Component {
   }
 
   render() {
-    return (
-      <div className="user-profile-container">
-        <img className="profile-img" src={this.props.user.img_url}/>
-        <div className="profile-username">{this.props.user.username}</div>
-      </div>
-    );
+    const { loading } = this.props;
+    const { img_url, username } = this.props.user;
+    if (loading) {
+      return (
+        <LoadingGraphic />
+      );
+    } else {
+      return (
+        <div className="user-profile-container">
+          <img className="profile-img" src={img_url}/>
+        <div className="profile-username">{username}</div>
+        </div>
+      );
+    }
   }
 
 }
