@@ -6,22 +6,22 @@ class UserInfo extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
+  componentWillMount() {
     console.log(this.props.match.params.userId);
     this.props.fetchUser(this.props.match.params.userId);
   }
 
-  // componentWillReceiveProps(newProps) {
-  //   if (this.props.match.params.userId !== newProps.match.params.userId) {
-  //     this.props.fetchUser(newProps.match.params.userId);
-  //   }
-  // }
+  componentWillReceiveProps(newProps) {
+    if (this.props.match.params.userId !== newProps.match.params.userId) {
+      this.props.fetchUser(newProps.match.params.userId);
+    }
+  }
 
   render() {
     return (
-      <div>
-        <img src={this.props.user.img_url}/>
-        <div>{this.props.user.img_url}</div>
+      <div className="user-profile-container">
+        <img className="profile-img" src={this.props.user.img_url}/>
+        <div className="profile-username">{this.props.user.username}</div>
       </div>
     );
   }

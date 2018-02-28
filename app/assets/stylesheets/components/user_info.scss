@@ -1,0 +1,34 @@
+.user-profile-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+}
+
+.user-profile-container {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Barlow Semi Condensed';
+}
+
+.profile-img {
+  height: 152px;
+  width: 152px;
+  border-radius: 50%;
+  overflow: hidden;
+  // margin-top: 150px;
+  margin-top: 30px;
+  // float: left;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-username {
+  // font-family: $roboto;
+  font-size: 28px;
+  margin-left: 100px;
+  margin-top: 15px;
+}

@@ -27,11 +27,11 @@ const App = () => (
       <Switch>
         <AuthRoute exact path="/" component={SplashContainer} />
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
-        <ProtectedRoute path="/users/:userId/photos" component={UserInfoContainer} />
-        <ProtectedRoute path="/users/:userId/photos" component={PhotoUserIndexContainer} />
         <ProtectedRoute path="/tags/:tagId/photos" component={PhotoTagIndexContainer} />
         <ProtectedRoute path="/upload" component={PhotoFormContainer} />
       </Switch>
+      <ProtectedRoute path="/users/:userId/photos" component={UserInfoContainer} />
+      <ProtectedRoute path="/users/:userId/photos" component={PhotoUserIndexContainer} />
     </main>
   </div>
 );
