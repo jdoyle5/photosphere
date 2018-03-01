@@ -8,6 +8,7 @@
 #  session_token   :string           not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  img_url         :string
 #
 
 class User < ApplicationRecord
@@ -33,6 +34,16 @@ class User < ApplicationRecord
     primary_key: :id,
     foreign_key: :owner_id,
     class_name: :Like
+
+  has_many :followers,
+    primary_key: :id,
+    foreign_key: :follower_id,
+    class_name: :Follow
+
+  has_many :followees,
+    primary_key: :id,
+    foreign_key: :followee_id,
+    class_name: :Follow
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)

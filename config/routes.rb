@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   namespace :api, defaults: {format: :json} do
     resources :users, only: [:create, :show] do
       resources :photos, only: [:index]
+      resources :follows, only: [] do
+        get "followers", on: :collection
+        get "followees", on: :collection
+      end
     end
     resources :photos, only: [:create, :destroy, :index, :show, :update] do
       resources :comments, only: [:index]
