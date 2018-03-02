@@ -8,9 +8,9 @@ import {
 
 // create a default state for our session so we can keep track of our
 // current user
-const _nullSession = {
+const _nullSession = Object.freeze({
   currentUser: null
-};
+});
 
 // We want to create a place in our state where we can store information
 // about our current user.
