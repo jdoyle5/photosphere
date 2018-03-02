@@ -11,7 +11,17 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  font-family: 'Barlow Semi Condensed';
+    font-family: 'Barlow Semi Condensed';
+}
+.profile-section{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.profile-top-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .profile-img {
@@ -31,4 +41,62 @@
   font-size: 28px;
   margin-left: 100px;
   margin-top: 15px;
+}
+
+.follow {
+  width: 125px;
+  height: 18px;
+  background-color: #499DF5;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 50px;
+  color: white;
+}
+
+.following {
+  width: 125px;
+  height: 18px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+.empty-button {
+  border: none;
+  display: none;
+}
+
+.profile-numbers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 300px;
+  margin-left: 100px;
+}
+
+.profile-blurb{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.user-fullname {
+  font-weight: 600;
+}
+
+.user-blurb {
+  margin-top: 5px;
+}
+
+strong {
+  font-weight: bold;
 }
