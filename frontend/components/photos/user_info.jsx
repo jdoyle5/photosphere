@@ -9,10 +9,10 @@ class UserInfo extends React.Component {
       numFollows: this.props.numFollows,
       numFollowing: this.props.numFollowing
     };
+    this.toggleFollow = this.toggleFollow.bind(this);
   }
 
   componentWillMount() {
-    console.log(this.props.match.params.userId);
     this.props.fetchUser(this.props.match.params.userId);
   }
 
