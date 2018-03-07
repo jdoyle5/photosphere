@@ -52,6 +52,16 @@ class UserInfo extends React.Component {
     }
   }
 
+  photos(){
+    if (this.props.numPhotos > 1) {
+      return 'photos';
+    } else if (this.props.numPhotos === 0) {
+      return 'photos';
+    } else {
+      return 'photo';
+    }
+  }
+
   render() {
     const { loading } = this.props;
     const { img_url, username } = this.props.user;
@@ -69,19 +79,18 @@ class UserInfo extends React.Component {
               <div>{this.toggleFollowButton()}</div>
             </div>
             <div className="profile-numbers">
-              {/* <div className="num=posts"><strong>{this.props.numPosts}</strong>&nbsp;&nbsp;{this.posts()}</div> */}
+              <div className="num-follows-divs">
+                <div className="num-followers"><strong>{this.props.numPhotos}</strong></div>
+                <div className="follows-string">&nbsp;&nbsp;{this.photos()}</div>
+              </div>
               <div className="num-follows-divs">
                 <div className="num-followers"><strong>{this.props.numFollows}</strong></div>
-              <div className="follows-string">&nbsp;&nbsp;{this.follows()}</div>
+                <div className="follows-string">&nbsp;&nbsp;{this.follows()}</div>
               </div>
               <div className="num-follows-divs">
                 <div className="num-following"><strong>{this.props.numFollowing}</strong></div>
-              <div className="following-string">&nbsp;&nbsp;following</div>
+                <div className="following-string">&nbsp;&nbsp;following</div>
               </div>
-            </div>
-            <div className="profile-blurb">
-              <div className="user-fullname">{this.props.user.name}</div>
-              {/* <div className="user-blurb">{this.props.user.blurb}</div> */}
             </div>
           </div>
       </div>

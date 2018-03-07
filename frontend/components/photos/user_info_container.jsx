@@ -12,7 +12,8 @@ const mapStateToProps = (state) => ({
   currentUser: state.session.currentUser,
   numFollows: state.entities.user.follows_count,
   numFollowing: state.entities.user.following_count,
-  followed: state.entities.user.followed_by_current_user
+  followed: state.entities.user.followed_by_current_user,
+  numPhotos: state.entities.user.photo_count
 });
 
 const mapDispatchToProps = (dispatch) => ({

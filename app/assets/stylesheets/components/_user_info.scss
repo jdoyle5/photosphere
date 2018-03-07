@@ -17,12 +17,16 @@
 .profile-section{
   display: flex;
   flex-direction: column;
+  // justify-content: center;
+  align-items: center;
   margin-top: 25px;
 }
 
 .profile-top-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-img {
@@ -40,7 +44,7 @@
 .profile-username {
   // font-family: $roboto;
   font-size: 28px;
-  margin-left: 100px;
+  margin-left: 20px;
   margin-top: 20px;
   font-family: 'Barlow Semi Condensed';
 }
@@ -83,7 +87,7 @@
   justify-content: space-between;
   margin-top: 20px;
   width: 300px;
-  margin-left: 100px;
+  // margin-left: 20px;
 }
 
 .profile-blurb{
