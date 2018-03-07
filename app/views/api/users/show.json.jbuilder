@@ -1,5 +1,5 @@
 json.partial! "api/users/user", user: @user
-# json.post_count @user.posts.count
+json.photo_count @user.photos.count
 json.followers @user.followers.map(&:id)
 json.following @user.followees.map(&:id)
 json.follows_count @user.followers.count
