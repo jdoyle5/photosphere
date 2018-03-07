@@ -70,8 +70,14 @@ class UserInfo extends React.Component {
             </div>
             <div className="profile-numbers">
               {/* <div className="num=posts"><strong>{this.props.numPosts}</strong>&nbsp;&nbsp;{this.posts()}</div> */}
-              <div className="num-followers"><strong>{this.props.numFollows}</strong>&nbsp;&nbsp;{this.follows()}</div>
-              <div className="num-following"><strong>{this.props.numFollowing}</strong>&nbsp;&nbsp;following</div>
+              <div className="num-follows-divs">
+                <div className="num-followers"><strong>{this.props.numFollows}</strong></div>
+              <div className="follows-string">&nbsp;&nbsp;{this.follows()}</div>
+              </div>
+              <div className="num-follows-divs">
+                <div className="num-following"><strong>{this.props.numFollowing}</strong></div>
+              <div className="following-string">&nbsp;&nbsp;following</div>
+              </div>
             </div>
             <div className="profile-blurb">
               <div className="user-fullname">{this.props.user.name}</div>
