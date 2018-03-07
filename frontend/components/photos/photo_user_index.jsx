@@ -27,7 +27,7 @@ class PhotoUserIndex extends React.Component {
       );
     } else {
       return (
-        <div className="index-photo-display">
+        <div className="user-index-photo-display">
           <h2 className="user-activity">Activity</h2>
           <div className="index-sub-display">
             {photos.map( photo =>
