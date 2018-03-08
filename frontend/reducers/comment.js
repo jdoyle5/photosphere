@@ -2,7 +2,8 @@ import merge from 'lodash/merge';
 
 import { RECEIVE_COMMENTS,
          RECEIVE_COMMENT,
-         REMOVE_COMMENT
+         REMOVE_COMMENT,
+         CLEAR_COMMENTS
 } from '../actions/comment';
 
 // export const RECEIVE_COMMENTS = 'RECEIVE_COMMENTS';
@@ -21,6 +22,9 @@ const CommentReducer = ( state = {}, action) => {
       const newState = merge({}, state);
       delete newState[action.comment.id];
       return newState;
+    case CLEAR_COMMENTS:
+      const clearState = {};
+      return clearState;
     default:
       return state;
   }

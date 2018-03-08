@@ -9,7 +9,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  requestPhoto: (photoId) => dispatch(requestPhoto(photoId)),
+  requestPhoto: photoId => dispatch(requestPhoto(photoId)),
   requestComments: photoId => dispatch(requestComments(photoId)),
   requestTags: photoId => dispatch(requestTags(photoId))
 });

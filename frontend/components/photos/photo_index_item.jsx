@@ -24,6 +24,7 @@ class PhotoIndexItem extends React.Component {
     this.setState({
       modalOn: false
     });
+    
   }
 
   render() {
