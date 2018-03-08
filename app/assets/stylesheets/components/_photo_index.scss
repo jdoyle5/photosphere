@@ -69,12 +69,8 @@
 }
 
 .tile {
-	// margin: 6px;
-  // display: flex;
-  // float: left;
   flex-direction: column;
   img:hover {
-    // opacity: 0.9;
     cursor: pointer;
   }
 
@@ -83,10 +79,7 @@
 		border-radius: 2px;
   }
 
-	// 	width: 300px;
-  //   margin-left: none;
   display: inline-block;
-  // margin: 0 0 1em;
   margin-bottom: 12px;
   width: 100%;
 }

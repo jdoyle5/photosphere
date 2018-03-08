@@ -84,11 +84,16 @@
 
 .close-modal-x {
   position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 2%;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  top: 15px;
   left: 98.6%;
   -webkit-transform: translate(-50%, -50%);
   color: gray;
   align-items: center;
+}
+
+.close-modal-x:hover {
+  opacity: 0.6;
 }
