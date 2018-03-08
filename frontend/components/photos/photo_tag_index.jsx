@@ -51,7 +51,7 @@ class PhotoTagIndex extends React.Component {
           </div>
           <div className="index-sub-display">
             {photos.map( photo =>
-              <PhotoTagIndexItem key={photo.id} photo={photo}/>
+              <PhotoTagIndexItem key={photo.id} photo={photo} clearComments={this.props.clearComments}/>
             )}
           </div>
         </div>

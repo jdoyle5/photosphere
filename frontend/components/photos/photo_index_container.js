@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
 import { selectPhotos } from '../../reducers/selectors';
-import { requestPhotos } from '../../actions/photo.js';
-import { requestTags } from '../../actions/tag.js';
+import { requestPhotos } from '../../actions/photo';
+import { clearComments } from '../../actions/comment';
+import { requestTags } from '../../actions/tag';
 import PhotoIndex from './photo_index';
 
 const mapStateToProps = state => ({
@@ -10,7 +11,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    requestPhotos: () => dispatch(requestPhotos())
+    requestPhotos: () => dispatch(requestPhotos()),
+    clearComments: () => dispatch(clearComments())
 });
 
 export default connect(

@@ -31,7 +31,7 @@ class PhotoUserIndex extends React.Component {
           <h2 className="user-activity">Activity</h2>
           <div className="index-sub-display">
             {photos.map( photo =>
-              <PhotoUserIndexItem key={photo.id} photo={photo}/>
+              <PhotoUserIndexItem key={photo.id} photo={photo} clearComments={this.props.clearComments}/>
             )}
           </div>
         </div>
