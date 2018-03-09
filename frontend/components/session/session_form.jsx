@@ -48,13 +48,15 @@ class SessionForm extends React.Component {
   }
 
   renderErrors() {
-    return (
-      <ul className="error-list">
-        {this.props.errors.map((error, i) => (
-          <li key={`error: ${i}`}>{error}</li>
-        ))}
-      </ul>
-    );
+    if (this.props.errors.length > 0) {
+      return (
+        <ul className="error-list">
+          {this.props.errors.map((error, i) => (
+            <li key={`error: ${i}`}>{error}</li>
+          ))}
+        </ul>
+      );
+    }
   }
 
   navLink() {
@@ -70,7 +72,9 @@ class SessionForm extends React.Component {
   }
 
   toggleForm() {
-    this.props.clearErrors();
+    if (this.props.errors.length > 0) {
+      this.props.clearErrors();
+    }
 
     if (this.state.formChosen === "Sign Up") {
       this.setState({ formChosen: "Log In"});
