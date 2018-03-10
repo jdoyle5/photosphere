@@ -12,7 +12,7 @@ const mapStateToProps = state => ({
   comments: selectComments(state),
   currentUser: state.session.currentUser,
   tags: selectTags(state),
-  loading: state.ui.loading
+  // loading: state.ui.loading
 });
 
 const mapDispatchToProps = dispatch => ({
