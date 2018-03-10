@@ -11,7 +11,8 @@ import { likePhoto, unlikePhoto } from '../../actions/like';
 const mapStateToProps = state => ({
   comments: selectComments(state),
   currentUser: state.session.currentUser,
-  tags: selectTags(state)
+  tags: selectTags(state),
+  loading: state.ui.loading
 });
 
 const mapDispatchToProps = dispatch => ({

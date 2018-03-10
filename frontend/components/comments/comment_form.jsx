@@ -2,6 +2,7 @@ import React from 'react';
 import CommentFormItem from './comment_form_item';
 import { TagItem } from '../tag/tag_item';
 import { Link } from 'react-router-dom';
+import LoadingGraphic from '../loading-graphic';
 
 class CommentForm extends React.Component {
   // componentWillMount() {
@@ -35,6 +36,7 @@ class CommentForm extends React.Component {
 
   renderComments() {
     const { photo, comments, currentUser } = this.props;
+
     return (
       <div className="comments-scroll">
         <ul>

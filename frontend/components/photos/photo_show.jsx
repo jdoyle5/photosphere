@@ -1,5 +1,6 @@
 import React from 'react';
 import CommentFormContainer from '../comments/comment_form_container';
+import LoadingGraphic from '../loading-graphic';
 
 class PhotoShow extends React.Component {
 
@@ -13,14 +14,15 @@ class PhotoShow extends React.Component {
   }
 
   render() {
-    return (
-      <div className="photo-comment-div">
-        <div className="photo-show-div">
-            <img key={this.props.photo.id} src={ this.props.photo.img_url }/>
+    const { loading } = this.props;
+      return (
+        <div className="photo-comment-div">
+          <div className="photo-show-div">
+              <img key={this.props.photo.id} src={ this.props.photo.img_url }/>
+          </div>
+          <CommentFormContainer photo={this.props.photo} modalClose={this.props.modalClose}/>
         </div>
-        <CommentFormContainer photo={this.props.photo} modalClose={this.props.modalClose}/>
-      </div>
-    );
+      );
   }
 }
 

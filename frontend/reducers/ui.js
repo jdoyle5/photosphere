@@ -2,6 +2,7 @@ import { RECEIVE_PHOTOS,
          RECEIVE_PHOTO,
          REMOVE_PHOTO
 } from '../actions/photo';
+import { RECEIVE_COMMENTS } from '../actions/comment';
 import { BEGIN_LOADING } from '../actions/loading';
 
 const _initialState = {
@@ -15,6 +16,8 @@ const UiReducer = (state = _initialState, action) => {
     case RECEIVE_PHOTOS:
       return Object.assign({}, state, { loading: false });
     case RECEIVE_PHOTO:
+      return Object.assign({}, state, { loading: false });
+    case RECEIVE_COMMENTS:
       return Object.assign({}, state, { loading: false });
     case BEGIN_LOADING:
       return Object.assign({}, state, { loading: true });

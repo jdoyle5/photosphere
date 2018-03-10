@@ -1,5 +1,5 @@
 import * as APIUtil from '../util/comment_api_util';
-// import { receiveErrors } from '../actions/errors';
+import { beginLoading } from '../actions/loading';
 
 export const RECEIVE_COMMENTS = 'RECEIVE_COMMENTS';
 export const RECEIVE_COMMENT = 'RECEIVE_COMMENT';
@@ -25,9 +25,10 @@ export const clearComments = () => ({
   type: CLEAR_COMMENTS
 });
 
-export const requestComments = photoId => dispatch => (
-  APIUtil.fetchComments(photoId).then(comments => dispatch(receiveComments(comments)))
-);
+export const requestComments = photoId => dispatch => {
+  // dispatch(beginLoading());
+  return APIUtil.fetchComments(photoId).then(comments => dispatch(receiveComments(comments)));
+};
 
 export const requestComment = commentId => dispatch => (
   APIUtil.fetchComment(commentId).then(comment => dispatch(receiveComment(comment)))
