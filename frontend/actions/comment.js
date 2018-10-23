@@ -26,7 +26,6 @@ export const clearComments = () => ({
 });
 
 export const requestComments = photoId => dispatch => {
-  // dispatch(beginLoading());
   return APIUtil.fetchComments(photoId).then(comments => dispatch(receiveComments(comments)));
 };
 

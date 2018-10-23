@@ -4,7 +4,7 @@ import LoadingGraphic from '../loading-graphic';
 
 class PhotoShow extends React.Component {
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.requestComments(this.props.photo.id);
     this.props.requestTags(this.props.photo.id);
   }

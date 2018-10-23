@@ -14,12 +14,6 @@ class PhotoTagIndexItem extends React.Component {
     this.modalOpen = this.modalOpen.bind(this);
   }
 
-  // componentWillReceiveProps(newProps) {
-  //   if (this.props.match.params.tagId !== newProps.match.params.tagId) {
-  //     this.setState({modalOn: false});
-  //   }
-  // }
-
   modalOpen() {
     this.setState({
       modalOn: true
